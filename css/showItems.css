@@ -1,0 +1,12 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,100,200);
+
+.message{
+	/*border-style: solid;*/
+	border-radius: 20px;
+	/*font-weight: bold;*/
+	padding: 10px 30px 10px 30px;
+	min-width: 100px;
+	max-width: 500px;
+	font-size: 1.3em;
+	font-style: font-family: 'Raleway', sans-serif
+}

@@ -1,0 +1,89 @@
+.form-control{
+	width:400px;
+	border-radius: 6px;
+}
+
+.class{
+	width:30%;
+	font-weight:bold;
+}
+
+form{
+	/*text-align: center;*/
+	
+}
+
+.one{
+	width:100%;
+}
+.third{
+	width:30%;
+	border-style: solid;
+	display:inline;
+	margin:5px;
+	position:relative;
+}
+
+.grid_4 {
+	/*border-style: solid;
+*/	width:100%;
+	vertical-align: top;
+	position:relative;
+	margin:0px;
+	overflow:auto;
+	/*display:inline;*/
+	/*margin-left: 10px;*/
+	/*margin-right:10px;*/
+}
+.container_12{
+	margin-left: auto;
+	margin-right:auto;
+	text-align: left;
+}
+.courseInfo{
+	/*float:right;*/
+}
+.bookInfo{
+	/*float:right;*/
+}
+
+.form-group{
+	/*border-style: solid;*/
+}
+
+table{
+	border-collapse: separate;
+	border-spacing: 10px 50px;
+	width: 100%;
+	border-style: none;
+}
+
+th{
+	height: 50px;
+	text-align: right;
+	vertical-align: top;
+}
+.top{
+	vertical-align: text-top;
+}
+
+.info_header{
+	font-size: 1.75em;
+}
+
+.border{
+	border: 2px solid #FFFFFF;
+	padding: 5px 5px;
+	width: 150px;
+	border-radius: 25px;
+	text-align: center;
+	float: right;
+	background-color: transparent;
+	font-size: 1em;
+	color: #FFFFFF;
+}
+
+.sellButton{
+	font-size: 1.5em;
+}
+
