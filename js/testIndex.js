@@ -52,76 +52,103 @@ var swarthmore = ["Ancient History",
 
 
 
-	// initialization code to add department names
-$(function(){
+
+
+
+// initialization code to add department names
+// $(function(){
+// initialize();
+function initialize(){
 	var department;
-	for (var i = 0; i< swarthmore.length;i++){
+	Parse.initialize("puHovjluHz95PXkN2Wj5xAwZ6pEB3KQfw5k3ZbGt", "BYcb3EbT8VAt08L4wdO1SNvBFxmiP02CimiiZz04");
+	var books = Parse.Object.extend("Book");
+	var queries = new Parse.Query(books);
+	queries.equalTo("college","Swarthmore");
+	queries.find({
+		error: function(error){
+			alert("Error: " + error.code +error.message);
+		}
+	});
+	console.log(queries);
+	var li, departmentQuery;
+	for (var i = 0; i < 1;i++){
+	// for (var i = 0; i< swarthmore.length;i++){
 		// Key: use string and use inspect element
 		department = swarthmore[i];
-		var li = "<li class='icon icon-arrow-left'><a  href='#'>";
-		li += department + "</a><div class='mp-level' ><h2>" +department +"</h2>";
-		li += "<a class='mp-back' href='#'>back</a>";
-		li += "<ul id =" + department;
-		li += "> <li class='icon icon-arrow-left'> <a href = '#'> 05</a> </li><li><a href='#'>22</a></li> </ul></div>";
-		li += "</li>";
+		console.log("after initializing, department is " + department);
+		li = "<li class='icon icon-arrow-left'><a class = 'icon icon-phone department' href='#'>";
+		li += department + "</a><div class='mp-level'><h2>" + department +"</h2>";
+		li += "<a class='mp-back' href='#'>back</a><ul>";
+		console.log("department is " + department);
+		departmentQuery = queries.equalTo("department", department);
+		// departmentQuery.find({
+		// 	success:function(results){
+		// 		console.log(results[0].get("courseNumber"));
+		// 		// console.log("departmentQuery count is " + count);
+		// 		// console.log(departmentQuery[0].get("courseNumber"));
+		// 	},
+		// 	error:function(error){
+		// 		alert("error!")
+		// 	}
+		// });
+		departmentQuery.find().then(function(results){
+			return makeList(results);
+		}).then(function(returnStrings){
+			console.log("returnStrings are " + returnStrings);
+			li += returnStrings + "</ul></div></li>";
+			return li;
+		}).then(function(li){
+			console.log("Before append, the li are " + li);
+			$('#SwatClasses').append(li);
+		});
+		// lis = makeList(departmentQuery);
+		// alert(lis);
+		// console.log("returned lis is " + lis);
+		// alert(lis);
+		// li += lis;
+		// li += "<li><a href = '#'>005</a> </li><li><a href='#'>022</a></li>";
+		// li += "</ul></div></li>";
+		// console.log(department + " ");
+		// console.log(li);
 	}
 	$('#triggerReturn').hide();
-	// alert($('#return').text());
 	$('#triggerReturn').on('click',function(e){
 		e.preventDefault;
 		$("#loadItems").empty();
-		// $('#mp-menu').show();
 		$('.content').show();
 		$("#form").show();
 		$('#triggerReturn').hide();
 	});
+	findQuery();
+	// current issue, findQuery is not properly loaded
+}
 
-	var $a=$("a[href='#']").not('.icon').not('.mp-back').not('.mp-forward').not('.menu-trigger');
-	$a.on('click',function(){
-		$parents = $a.parents();
-		var courseNumber = $(this).text();
-		var $department=$(this).parent().parent().parent().siblings('.department');
-		console.log("department now is " + $department.text());
-		var $college = $department.parent().parent().parent().siblings('.college');
-		console.log("college is " + $college.text() + " and length is "+ $college.length);
-		console.log("department now is " + $department.text() + " and college is " + $college.text() + " and course number is "+  courseNumber);
-		var list, name,condition;
 
-		// creating Parse query
-		Parse.initialize("puHovjluHz95PXkN2Wj5xAwZ6pEB3KQfw5k3ZbGt", "BYcb3EbT8VAt08L4wdO1SNvBFxmiP02CimiiZz04");
-		var Book = Parse.Object.extend("Book");
-		var query = new Parse.Query("Book");
-		var collegeName = $college.text()
-		query.equalTo("courseNumber",courseNumber);
-		query.equalTo("department",$department.text());
-		query.equalTo("college",collegeName);
-
-		query.find({
-			success:function(results){
-				// alert("success");
-				var text="";
-				for (var i =0; i<results.length; i++){
-					var book = results[i];
-					text += "<p class ='message block block-50'><span class ='department'><b> " + book.get("department");
-					text +=" </b></span> <span class ='courseNumber'>" +book.get("courseNumber") + " </span><span class ='name'>"; 
-					text += book.get("name") +"</span><br />Price:$ <span class ='price'>" + book.get("price") ;
-					text +=" </span> <br />Condition: <span class ='condition'>" + book.get("condition") ;
-					text += "</span> <br />Seller Name: <span class ='sellerName'>" + book.get("sellerName");
-					text += "</span><br />Contact: <span class ='sellerContact'>" + book.get("sellerContact"); 
-					text += "</span><br /> Additional comment: <span class='additional_comment'>"; 
-					text +=  book.get("additionalComment") +" </span><br /></p>";
-					// $("#loadItems").append(book.get("price"));
-				}
-				$('form').hide(0);
-				$('.content').hide(0);
-				$('#loadItems').empty();
-				$("#loadItems").append(text);
-				$('#triggerReturn').show();
-			},
-			error: function(err){
-				alert("Error: " + error.code +error.message);
-				}
-			});
-		});
-	
-});
+	// queries.count({
+	// 	success: function(count){
+	// 		if (count == 0){
+	// 			return "0 result";
+	// 		} else{
+	// 			console.log("Count is " + count);
+	// 			queries.find({
+	// 				success:function(results){
+	// 					for (var i = 0; i < results.length; i++){
+	// 						text += "<li><a href = '#'>" + results[i].get("courseNumber") + "</a> </li>";
+	// 						// console.log(text);
+	// 					}
+	// 					// console.log("Total text is below:");
+	// 					// console.log(text);
+	// 					console.log("before returning, the text is " + text);
+	// 					return text;
+	// 				},
+	// 				error: function(error){
+	// 					alert("Error: " + error.code +error.message);
+	// 					// return "No result!"
+	// 				}
+	// 			});
+	// 		}
+	// 	},
+	// 	error: function(err){
+	// 		console.log(err)
+	// 	}
+	// });

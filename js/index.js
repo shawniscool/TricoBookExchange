@@ -48,29 +48,39 @@ var swatDepts = ["Ancient History",
 "Spanish",
 "Statistics",
 "Theater"]
+
 $(document).ready(function(){
 for (var i = 0; i < swatDepts.length; i++) {
-	$('#SwatClasses').prepend("<li>" +swatDepts[i]+"</li>");
+	// $('#SwatClasses').prepend("<li>" +swatDepts[i]+"</li>");
 	}
 
-	var newLi = document.createElement("li");
-	newLi.addClass("icon icon-arrow-left");
-	var newA = document.createElement
+	// var newLi = document.createElement("li");
+	// newLi.addClass("icon icon-arrow-left");
+	// var newA = document.createElement("a")
 
-	<li class="icon icon-arrow-left">
-		<a class="icon icon-tv" href="#">Art History</a>
-		<div class="mp-level">
-			<h2>Art History</h2>
-			<a class="mp-back" href="#">back</a>
-			<ul>
-				<li><a href="#">Flat Superscreen</a></li>
-				<li><a href="#">Gigantic LED</a></li>
-				<li><a href="#">Power Eater</a></li>
-				<li><a href="#">3D Experience</a></li>
-				<li><a href="#">Classic Comfort</a></li>
-			</ul>
-		</div>
-	</li>
+	// var newLi = document.createElement("li")
+	// var newA = document.createElement("a")
+	// newLi.appendChild(newA)
+	$('#111').append("<li><a href ='#'>088</a></li>" );
+	// this works so far
+	// more abstraction would be more helpful instead of having an id on each li branch
+
+
+	// <li class="icon icon-arrow-left">
+	// 	<a class="icon icon-tv" href="#">Art History</a>
+	// 	<div class="mp-level">
+	// 		<h2>Art History</h2>
+	// 		<a class="mp-back" href="#">back</a>
+	// 		<ul>
+	// 			<li><a href="#">Flat Superscreen111</a></li>
+	// 			<li><a href="#">Gigantic LED</a></li>
+	// 			<li><a href="#">Power Eater</a></li>
+	// 			<li><a href="#">3D Experience</a></li>
+	// 			<li><a href="#">Classic Comfort</a></li>
+	// 		</ul>
+	// 	</div>
+	// </li>
+
 	// Parse.initialize("puHovjluHz95PXkN2Wj5xAwZ6pEB3KQfw5k3ZbGt", "BYcb3EbT8VAt08L4wdO1SNvBFxmiP02CimiiZz04");
 	// var Book = Parse.Object.extend("Book");
 	// var query = new Parse.Query("Book");
