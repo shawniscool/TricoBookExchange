@@ -1,54 +1,8 @@
-var swarthmore = ["Ancient History",
-"Anthropology",
-"Arabic",
-"Art",
-"Art History",
-"Asian Studies",
-"Astronomy",
-"Biochemistry",
-"Biology",
-"Black Studies",
-"Chemistry",
-"Chinese",
-"Classics",
-"Cognitive Science",
-"Comparative Literature",
-"Computer Science",
-"Dance",
-"Economics",
-"Educational Studies",
-"Engineering",
-"English Literature",
-"Environmental Studies",
-"Film & Media Studies",
-"French & Francophone Studies",
-"Gender & Sexuality Studies",
-"German Studies",
-"Greek",
-"History",
-"Interpretation Theory",
-"Islamic Studies",
-"Japanese",
-"Latin",
-"Latin American Studies",
-"Linguistics",
-"Math and Stats",
-"Medieval Studies",
-"Modern Languages & Literatures",
-"Music",
-"Peace & Conflict Studies",
-"Philosophy",
-"Physics",
-"Political Science",
-"Psychology",
-"Public Policy",
-"Religion",
-"Russian",
-"Sociology",
-"Spanish",
-"Statistics",
-"Theater"]
+// list of all swarthmore departments
+var swarthmore = ["Ancient History","Anthropology","Arabic","Art","Art History","Asian Studies","Astronomy","Biochemistry","Biology","Black Studies","Chemistry","Chinese","Classics","Cognitive Science","Comparative Literature","Computer Science","Dance","Economics","Educational Studies","Engineering","English Literature","Environmental Studies","Film & Media Studies","French & Francophone Studies","Gender & Sexuality Studies","German Studies","Greek","History","Interpretation Theory","Islamic Studies","Japanese","Latin","Latin American Studies","Linguistics","Math and Stats","Medieval Studies","Modern Languages & Literatures","Music","Peace & Conflict Studies","Philosophy","Physics","Political Science","Psychology","Public Policy","Religion","Russian","Sociology","Spanish","Statistics","Theater"]
 
+
+// This function returns a string of all course numbers within one department
 function makeList(results){
 	var set = new Set();
 	var text = "";
@@ -66,6 +20,8 @@ function makeList(results){
 }
 
 
+// This function is used to exhibit existing data regarding textbooks of a certain course
+// after the user clicks on the course number
 function findQuery(){
 	console.log("start of findQuery");
 	var $a=$("a[href='#']").not('.icon').not('.mp-back').not('.mp-forward').not('.menu-trigger');
@@ -119,6 +75,7 @@ function findQuery(){
 
 }
 
+// The initialization function called when the first is first loaded
 function initialize(){
 	var department;
 	Parse.initialize("puHovjluHz95PXkN2Wj5xAwZ6pEB3KQfw5k3ZbGt", "BYcb3EbT8VAt08L4wdO1SNvBFxmiP02CimiiZz04");
@@ -150,9 +107,12 @@ function initialize(){
 	// current issue, findQuery is not properly loaded
 }
 
+// forLoop function goes over all the department in each college adds all the content info to 
+// each department, college
 function forLoop(queries){
 	console.log("start of for loop");
 	for (var i = 0; i < 2;i++){
+		li = "";
 	// for (var i = 0; i< swarthmore.length;i++){
 		// Key: use string and use inspect element
 		department = swarthmore[i];
@@ -160,7 +120,7 @@ function forLoop(queries){
 		li = "<li class='icon icon-arrow-left'><a class = 'icon icon-phone department' href='#'>";
 		li += department + "</a><div class='mp-level'><h2>" + department +"</h2>";
 		li += "<a class='mp-back' href='#'>back</a><ul>";
-		console.log("department is " + department);
+		console.log("after li addition, department is " + department);
 		departmentQuery = queries.equalTo("department", department);
 		// departmentQuery.find({
 		// 	success:function(results){
@@ -194,13 +154,24 @@ function forLoop(queries){
 	}
 	console.log("end of for loop");
 }
+
+// The last function to be called so that menu works for all the dynamically added info
 function createMenu(){
 	console.log("create menu function");
 	new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ) );
 }
-initialize();
-setTimeout(findQuery,500);
-setTimeout(createMenu,1000);
+
+// This is where all the functions are called. First calls the initialize function and calls
+// createMenu at the end by setting time out.
+$(function(){
+	initialize();
+	// findQuery();
+	// createMenu();
+	setTimeout(findQuery,500);
+	setTimeout(createMenu,500);
+});
+
+
 
 // var deferred = $.Deferred();
 // console.log("after deferred created");
@@ -217,4 +188,4 @@ setTimeout(createMenu,1000);
 // 	console.log("in deferred function");
 // 	findQuery();
 // 	createMenu();
-// });
+// 
