@@ -10,6 +10,10 @@ class UserMailer < ApplicationMailer
     mail to: user.email, subject: "Account activation"
   end
 
+  def send_email(user)
+    mail to: "shawn.pan2330@gmail.com", subject: "Textbook Inquiry"
+  end
+
   # Subject can be set in your I18n file at config/locales/en.yml
   # with the following lookup:
   #

@@ -8,7 +8,8 @@
   <!-- <span class="college">College: <%= book.college %></span> -->
   <span class="userContact">Contact: <%= book.user.email %></span><br>
   <span class="additional">Additional Comment: <%= book.additional %></span>
-  <a href="#"><%= image_tag("message.png",:class=>"smallicon") %></a><br>
+  <a href="#"><%= image_tag("message.png",:class=>"smallicon") %></a>
+  <a href="#"><%= image_tag("email.png",:class=>"smallicon") %></a><br>
   <span class="timestamp">
     Posted <%= time_ago_in_words(book.created_at) %> ago.
     <% if current_user?(book.user) %>
