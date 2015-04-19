@@ -1,0 +1,15 @@
+<header class="codrops-header">
+	<h1 id="heading"><strong><%= link_to "Trico Book Exchange", root_path  %></strong> 
+	<div class = "block-button">
+		<!-- <button class="border sellButton"><a href= "#" id ="sell">Sell Your Textbooks</a></button>  -->
+      <% if logged_in? %>
+        	<li class = "button"><%= link_to "Profile", current_user %></li>
+        	<li class = "button"><%= link_to "Log out", logout_path, method:"delete" %>
+      <% else %>
+        	<li class = "button"><%= link_to "Log in", login_path %></li>
+	        <li class = "button"><%= link_to "Sign up", signup_path %></li>
+	    <% end %>
+        </nav>
+	</div><span>Buy and sell used textbooks
+	</span></h1><a href="#" id="triggerReturn" class="menu-trigger">Return</a>
+</header>

@@ -7,7 +7,11 @@
 }
 
 html, body, .container, .scroller {
-	height: 175%;
+	/*min-height: 100%;*/
+}
+
+html{
+	min-height:100%;
 }
 
 .scroller {

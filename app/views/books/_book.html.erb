@@ -1,12 +1,17 @@
-<li id="book-<%= book.id %>">
-  <span class="user"><%= link_to book.user.name, book.user %></span>
-  <span class="name">Name: <%= book.name %></span>
-  <span class="name">College: <%= book.college %></span>
-  <span class="name">Department: <%= book.department %></span>
+<p class='message block block-50'>
+  <span class="department"><%= book.department %></span>
+  <span class="courseNumber"> <%= book.courseNumber%></span><br>
+  <span class="name">Name: <%= book.name %></span><br>
+  <span class="price">Price:$ <%= book.price %></span><br>
+  <span class="condition">Condition: <%= book.condition %></span><br>
+  Owner: <span class="user"><%= link_to book.user.name, book.user %></span><br>
+  <!-- <span class="college">College: <%= book.college %></span> -->
+  <span class="userContact">Contact: <%= book.user.email %></span><br>
+  <span class="additional">Additional Comment: <%= book.additional %></span><br>
   <span class="timestamp">
     Posted <%= time_ago_in_words(book.created_at) %> ago.
     <% if current_user?(book.user) %>
     	<%= link_to "delete", book, method: :delete, data: {confirm:"You sure?"} %>
     <% end %>
   </span>
-</li>
+</p>

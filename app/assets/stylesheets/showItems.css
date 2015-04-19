@@ -1,12 +1,30 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,300,100,200);
 
 .message{
-	/*border-style: solid;*/
+	border-style: solid;
 	border-radius: 20px;
 	/*font-weight: bold;*/
 	padding: 10px 30px 10px 30px;
-	min-width: 100px;
+	/*min-width: 100px;*/
 	max-width: 500px;
+	margin-left:10%;
 	font-size: 1.3em;
 	font-style: font-family: 'Raleway', sans-serif
+}
+
+.user{
+	color: #B5B2B8;
+}
+
+.button{
+	display:inline;  
+	border: 2px solid #FFFFFF;
+  padding: 5px 5px;
+  width: 150px;
+  border-radius: 25px;
+  text-align: center;
+  float: right;
+  background-color: transparent;
+  font-size: 1em;
+  color: #FFFFFF;
 }
