@@ -25,7 +25,7 @@ class BooksController < ApplicationController
 
 	def find
 		respond_to do |format|
-			@books = Book.where("college = ? AND department = ? AND courseNumber = ?", params[:college],params[:department],params[:courseNumber].to_i)
+			@books = Book.where("college = ? AND department = ? AND coursenumber = ?", params[:college],params[:department],params[:coursenumber].to_i)
 			puts "size of books is " + @books.size.to_s
 			format.html {render @books}
 			format.js {render @books}
@@ -34,7 +34,7 @@ class BooksController < ApplicationController
 
 	private
 		def book_params
-			params.require(:book).permit(:name,:college,:department,:courseNumber)
+			params.require(:book).permit(:name,:college,:department,:coursenumber)
 		end
 
 		def correct_user

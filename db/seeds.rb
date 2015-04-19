@@ -28,13 +28,13 @@ users = User.order(:created_at).take(6)
 50.times do |n|
   condition = ["perfect","used","poor","excellent"].sample
   name = Faker::Lorem.word
-  users.each { |user| user.books.create!(name: name, college:"Swarthmore College", department:"Mathematics", courseNumber: n%5,condition:condition,price:Random.new.rand(5..70)) }
-  users.each { |user| user.books.create!(name: name, college:"Swarthmore College", department:"Computer Science", courseNumber: n%8,condition:condition,price:Random.new.rand(5..70)) }
-  users.each { |user| user.books.create!(name: name, college:"Swarthmore College", department:"Political Science", courseNumber: n%11,condition:condition,price:Random.new.rand(5..170)) }
-  users.each { |user| user.books.create!(name: name, college:"Swarthmore College", department:"English Literature", courseNumber: n%3+64,condition:condition,price:Random.new.rand(25..70)) }
-  users.each { |user| user.books.create!(name: name, college:"Harvard University", department:"Computer Science", courseNumber: n%14,condition:condition,price:Random.new.rand(5..370)) }
-  users.each { |user| user.books.create!(name: name, college:"Harverford College", department:"Computer Science", courseNumber: n%10+33,condition:condition,price:Random.new.rand(45..70)) }
-  users.each { |user| user.books.create!(name: name, college:"University of Maryland", department:"Computer Science", courseNumber: n%8,condition:condition,price:Random.new.rand(65..70)) }
-  users.each { |user| user.books.create!(name: name, college:"Rutgers University", department:"Computer Science", courseNumber: n%7,condition:condition,price:Random.new.rand(5..70)) }
+  users.each { |user| user.books.create!(name: name, college:"Swarthmore College", department:"Mathematics", coursenumber: n%5,condition:condition,price:Random.new.rand(5..70)) }
+  users.each { |user| user.books.create!(name: name, college:"Swarthmore College", department:"Computer Science", coursenumber: n%8,condition:condition,price:Random.new.rand(5..70)) }
+  users.each { |user| user.books.create!(name: name, college:"Swarthmore College", department:"Political Science", coursenumber: n%11,condition:condition,price:Random.new.rand(5..170)) }
+  users.each { |user| user.books.create!(name: name, college:"Swarthmore College", department:"English Literature", coursenumber: n%3+64,condition:condition,price:Random.new.rand(25..70)) }
+  users.each { |user| user.books.create!(name: name, college:"Harvard University", department:"Computer Science", coursenumber: n%14,condition:condition,price:Random.new.rand(5..370)) }
+  users.each { |user| user.books.create!(name: name, college:"Harverford College", department:"Computer Science", coursenumber: n%10+33,condition:condition,price:Random.new.rand(45..70)) }
+  users.each { |user| user.books.create!(name: name, college:"University of Maryland", department:"Computer Science", coursenumber: n%8,condition:condition,price:Random.new.rand(65..70)) }
+  users.each { |user| user.books.create!(name: name, college:"Rutgers University", department:"Computer Science", coursenumber: n%7,condition:condition,price:Random.new.rand(5..70)) }
 
 end

@@ -15,13 +15,13 @@ $('#triggerReturn').on('click',function(e){
 	
 	// triggers the ajax call when course number is clicked 
 	$a.on('click',function(){
-		var $courseNumber = $(this);
+		var $coursenumber = $(this);
 		var $department=$(this).parent().parent().parent().siblings('.department');
 		var $college = $department.parent().parent().parent().siblings('.college');
-		console.log("department now is " + $department.text() + " and college is " + $college.text() + " and course number is "+  $courseNumber.text());
+		console.log("department now is " + $department.text() + " and college is " + $college.text() + " and course number is "+  $coursenumber.text());
 		$.ajax({type:'GET',
 						url:'/find',
-						data:{college:$college.text(),department:$department.text(), courseNumber:$courseNumber.text()},
+						data:{college:$college.text(),department:$department.text(), courseNumber:$coursenumber.text()},
 						success:function(books){
 							// books are returned from book controller render
 							console.log("sent ajax call");
