@@ -8890,3 +8890,1464 @@ Filter chain halted as :logged_in_user rendered or redirected
 Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
   [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "books"
   [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "books"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('I just ate an orange!', '2015-04-18 20:19:39 UTC', '2015-04-18 20:29:39', 499495288, 762146111)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Check out the @tauday site by @mhartl: http://tauday.com', '2012-04-18 20:29:39 UTC', '2015-04-18 20:29:39', 517500819, 762146111)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Sad cats are sad: http://youtu.be/PKffm2uI4dk', '2015-04-18 18:29:39 UTC', '2015-04-18 20:29:39', 12348100, 762146111)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Writing a short test', '2015-04-18 20:29:39 UTC', '2015-04-18 20:29:39', 941832919, 762146111)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Ipsam et voluptates qui ut.', '2015-03-07 20:29:39 UTC', '2015-04-18 20:29:39', 177734013, 762146111)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Quibusdam rerum iusto numquam voluptatem est porro et officiis.', '2015-03-07 20:29:39 UTC', '2015-04-18 20:29:39', 1033843180, 762146111)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Mollitia sequi molestiae odit est eius quo odio aliquid itaque.', '2015-03-07 20:29:39 UTC', '2015-04-18 20:29:39', 613834836, 762146111)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Non voluptas ullam accusamus itaque modi.', '2015-03-07 20:29:39 UTC', '2015-04-18 20:29:39', 328290505, 762146111)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Veniam occaecati adipisci et placeat facere vel quibusdam esse quasi.', '2015-03-07 20:29:39 UTC', '2015-04-18 20:29:39', 234210660, 762146111)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Et consequatur possimus optio eos asperiores numquam rem.', '2015-03-07 20:29:39 UTC', '2015-04-18 20:29:39', 989001203, 762146111)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Ipsam laborum odit quasi sed accusamus iure.', '2015-03-07 20:29:39 UTC', '2015-04-18 20:29:39', 603694155, 762146111)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Repudiandae quas aut ea quaerat qui eaque amet fugit omnis.', '2015-03-07 20:29:39 UTC', '2015-04-18 20:29:39', 352097504, 762146111)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Aperiam itaque et enim sunt dignissimos veniam deserunt eum sed.', '2015-03-07 20:29:39 UTC', '2015-04-18 20:29:39', 71534927, 762146111)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('A consequatur non numquam accusantium iusto occaecati sunt molestiae.', '2015-03-07 20:29:39 UTC', '2015-04-18 20:29:39', 860142042, 762146111)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Quos commodi dolorem nihil et ipsam quo sunt facilis.', '2015-03-07 20:29:39 UTC', '2015-04-18 20:29:39', 58620899, 762146111)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Dolores consequuntur qui dolorem accusantium explicabo.', '2015-03-07 20:29:39 UTC', '2015-04-18 20:29:39', 880364408, 762146111)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Odio tempore similique delectus quibusdam explicabo facere.', '2015-03-07 20:29:39 UTC', '2015-04-18 20:29:39', 762321612, 762146111)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Nostrum molestiae ad et fuga.', '2015-03-07 20:29:39 UTC', '2015-04-18 20:29:39', 444017243, 762146111)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Nesciunt quas assumenda quos recusandae quo aut ducimus sint maxime.', '2015-03-07 20:29:39 UTC', '2015-04-18 20:29:39', 68403196, 762146111)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Explicabo est nihil soluta et rerum accusamus sunt maiores animi.', '2015-03-07 20:29:39 UTC', '2015-04-18 20:29:39', 856985457, 762146111)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Similique eum tempora minima ipsa.', '2015-03-07 20:29:39 UTC', '2015-04-18 20:29:39', 706600661, 762146111)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Iusto omnis hic et beatae.', '2015-03-07 20:29:39 UTC', '2015-04-18 20:29:39', 488304196, 762146111)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Maxime repudiandae id ut aut quibusdam.', '2015-03-07 20:29:39 UTC', '2015-04-18 20:29:39', 228979669, 762146111)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Quo sit ut temporibus exercitationem repellat deserunt dicta adipisci.', '2015-03-07 20:29:39 UTC', '2015-04-18 20:29:39', 983745350, 762146111)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Praesentium veritatis autem quis autem et.', '2015-03-07 20:29:39 UTC', '2015-04-18 20:29:39', 676538406, 762146111)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Consectetur ut porro quos eum vel et fugiat autem repudiandae.', '2015-03-07 20:29:39 UTC', '2015-04-18 20:29:39', 525605047, 762146111)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Assumenda excepturi mollitia cupiditate ullam exercitationem et alias.', '2015-03-07 20:29:39 UTC', '2015-04-18 20:29:39', 106776847, 762146111)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Quia esse quaerat autem dolorem atque dolorem aspernatur voluptate voluptatem.', '2015-03-07 20:29:39 UTC', '2015-04-18 20:29:39', 828012954, 762146111)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Repudiandae voluptatum pariatur facere quis qui debitis.', '2015-03-07 20:29:39 UTC', '2015-04-18 20:29:39', 792652861, 762146111)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Est sed illum ut ad repudiandae accusantium.', '2015-03-07 20:29:39 UTC', '2015-04-18 20:29:39', 406445230, 762146111)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Et aut earum aspernatur quis est aut illum.', '2015-03-07 20:29:39 UTC', '2015-04-18 20:29:39', 19959062, 762146111)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Rerum delectus dolorum cupiditate velit aut repellat et.', '2015-03-07 20:29:39 UTC', '2015-04-18 20:29:39', 909622657, 762146111)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Accusantium aspernatur placeat sit impedit modi quod ea.', '2015-03-07 20:29:39 UTC', '2015-04-18 20:29:39', 646488084, 762146111)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Vel error et maxime nemo.', '2015-03-07 20:29:39 UTC', '2015-04-18 20:29:39', 294621321, 762146111)[0m
+  [1m[35mFixture Delete (0.4ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('Michael Example', 'michael@example.com', '$2a$04$AXsmGTItChcB0qo3LCPm2.hfqTxprcXM5YrYb4v8snpYUblrOJZLe', 't', '2015-04-18 20:29:39 UTC', '2015-04-18 20:29:39', '2015-04-18 20:29:39', 762146111)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('Sterling Archer', 'duchess@example.gov', '$2a$04$tWVuVK5SDgr1cYjWs2nri.ERMcWepTEdOJc0vu4i92ig/2FYg1bn6', 't', '2015-04-18 20:29:39 UTC', '2015-04-18 20:29:39', '2015-04-18 20:29:39', 950961012)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('Lana Kane', 'hands@example.gov', '$2a$04$JC2vjQG1/F8c8Ml9Wp331OIiV2eNO5Dj/deDRI0kMLRmKH8HmqeHS', 't', '2015-04-18 20:29:39 UTC', '2015-04-18 20:29:39', '2015-04-18 20:29:39', 409608538)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('Mallory Archer', 'boss@example.gov', '$2a$04$mvkleCiDO1Ag.dSvUj.zCeut7w7M39jsndzY.hT4surhYXYCkdGl2', 't', '2015-04-18 20:29:39 UTC', '2015-04-18 20:29:39', '2015-04-18 20:29:39', 785162917)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 0', 'user-0@example.com', '$2a$04$3QueqRyX3U3pSBHq9ZOWY..tFye19jvtUzJhMdGVaJTAdTupMrGee', 't', '2015-04-18 20:29:39 UTC', '2015-04-18 20:29:39', '2015-04-18 20:29:39', 338193910)[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 1', 'user-1@example.com', '$2a$04$wF6aixyrOwWsUWOHhJULn.pnYXON8810BNsLfH2xAIQcV5n9uQsTW', 't', '2015-04-18 20:29:39 UTC', '2015-04-18 20:29:39', '2015-04-18 20:29:39', 590306657)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 2', 'user-2@example.com', '$2a$04$rSReUgqPlFdoGMQZAvaPN.kzAnJOGpC0Ec/713F4IczXkG2cGKuIe', 't', '2015-04-18 20:29:39 UTC', '2015-04-18 20:29:39', '2015-04-18 20:29:39', 975572189)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 3', 'user-3@example.com', '$2a$04$OApLisfjH7Jh/czlKVf97uVCIaISyezVd/FhvnptExxPC9l4N6pG.', 't', '2015-04-18 20:29:39 UTC', '2015-04-18 20:29:39', '2015-04-18 20:29:39', 220281934)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 4', 'user-4@example.com', '$2a$04$bclseNc8Wuh79CRxLD5mYex.sCfSLems34t0lU4dm83u8a4gUqCsG', 't', '2015-04-18 20:29:39 UTC', '2015-04-18 20:29:39', '2015-04-18 20:29:39', 323332591)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 5', 'user-5@example.com', '$2a$04$pNS6abqSvG6J9w4PJZIEZ.CqdLv4yZrI92cJOwkzqDVjnLIFAdRAO', 't', '2015-04-18 20:29:39 UTC', '2015-04-18 20:29:39', '2015-04-18 20:29:39', 608344442)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 6', 'user-6@example.com', '$2a$04$rex2CuAhdkcCpQDh1UKmhe4dHcF.AVbFxmhFDIkuddGMSzLOgTscS', 't', '2015-04-18 20:29:39 UTC', '2015-04-18 20:29:39', '2015-04-18 20:29:39', 1028376774)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 7', 'user-7@example.com', '$2a$04$RHcyGlj0CoM/1.mCkELRWu5QxWdNi23x7KgsgX6lo4o2mHniJAzJO', 't', '2015-04-18 20:29:39 UTC', '2015-04-18 20:29:39', '2015-04-18 20:29:39', 172816471)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 8', 'user-8@example.com', '$2a$04$MRpU7uzqUSq219VGy5fwCOU4K4B4YneFmMC3qNoiXS02XETNXbbw2', 't', '2015-04-18 20:29:39 UTC', '2015-04-18 20:29:39', '2015-04-18 20:29:39', 452191684)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 9', 'user-9@example.com', '$2a$04$1BoR2A.s6qXiPly7S5C.f.iTYfksVU5ROgUiIT4LsM09aQU/sYI2m', 't', '2015-04-18 20:29:39 UTC', '2015-04-18 20:29:39', '2015-04-18 20:29:39', 771020115)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 10', 'user-10@example.com', '$2a$04$swlLmZCWi2aDd4Dzxt3QAedsC3mW7aW43J2usVc/H0i1c2vJ9xUzO', 't', '2015-04-18 20:29:39 UTC', '2015-04-18 20:29:39', '2015-04-18 20:29:39', 956993830)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 11', 'user-11@example.com', '$2a$04$lSwjt0iKhU34NU0NIwn6q.XK19aH5OfL4wWyf/h2gGut7lQuOoYr6', 't', '2015-04-18 20:29:39 UTC', '2015-04-18 20:29:39', '2015-04-18 20:29:39', 235774389)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 12', 'user-12@example.com', '$2a$04$ms1v8xLD.2eQKlJGoVRbiOKIsw54zI0C.RjgXWEZCU5y9U1Y/eS66', 't', '2015-04-18 20:29:39 UTC', '2015-04-18 20:29:39', '2015-04-18 20:29:39', 386199561)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 13', 'user-13@example.com', '$2a$04$VAPTTQmn6mlnRAgyfvisPupZS5qneRxuk1c2bcXoZwFYV0EfZXxLC', 't', '2015-04-18 20:29:39 UTC', '2015-04-18 20:29:39', '2015-04-18 20:29:39', 537116830)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 14', 'user-14@example.com', '$2a$04$6xozx.fo2aOFObw52FF91uUzlUIJs7MV/U9gad5CJ16moYIen6BWm', 't', '2015-04-18 20:29:39 UTC', '2015-04-18 20:29:39', '2015-04-18 20:29:39', 1046959423)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 15', 'user-15@example.com', '$2a$04$rfHVkcoNlBCJgWSKwYj42OYtZGYV5.l0z8wJf62rmZ7OW.E62YIUe', 't', '2015-04-18 20:29:39 UTC', '2015-04-18 20:29:39', '2015-04-18 20:29:39', 157312430)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 16', 'user-16@example.com', '$2a$04$hCwvs7Pn86t1UJIC42PgK.80VErWoeNDkaaaod4iEl4nH7oilnLNW', 't', '2015-04-18 20:29:39 UTC', '2015-04-18 20:29:39', '2015-04-18 20:29:39', 275330066)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 17', 'user-17@example.com', '$2a$04$QIVtrZL6v8OUu19JgOamm.68vakD2QXvK8JpfUeArOWCAjad0Mzva', 't', '2015-04-18 20:29:39 UTC', '2015-04-18 20:29:39', '2015-04-18 20:29:39', 661521543)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 18', 'user-18@example.com', '$2a$04$/BTYBTkX7j4iY3kcPFKTWebwekVuRAdaDA5PJLPc.n0gKs9VMSLbe', 't', '2015-04-18 20:29:39 UTC', '2015-04-18 20:29:39', '2015-04-18 20:29:39', 936450328)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 19', 'user-19@example.com', '$2a$04$SOHetH3OXGn1/GfQ8EeSRuk7lKVA5htWmDTS6zTOL9lso3xvjqUyS', 't', '2015-04-18 20:29:39 UTC', '2015-04-18 20:29:39', '2015-04-18 20:29:39', 14035331)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 20', 'user-20@example.com', '$2a$04$B89LOg3H4wEqEl7VjqqRMOeQVEejGHhboR7wVvDk2rI91vrkjnafW', 't', '2015-04-18 20:29:39 UTC', '2015-04-18 20:29:39', '2015-04-18 20:29:39', 304595689)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 21', 'user-21@example.com', '$2a$04$734hCbq.ZYZ2pO3iNsayk.kGfO33sYki/DtiKHmq9irTzCnd0k9A.', 't', '2015-04-18 20:29:39 UTC', '2015-04-18 20:29:39', '2015-04-18 20:29:39', 622916212)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 22', 'user-22@example.com', '$2a$04$42GBpm6W3iQ6GdYZSGwY3.BmbG48XTu5vy99.XgbsraQ2Hv.negi2', 't', '2015-04-18 20:29:39 UTC', '2015-04-18 20:29:39', '2015-04-18 20:29:39', 1009361868)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 23', 'user-23@example.com', '$2a$04$j7FD2PuagrRw6lcyMmX05OxQeBIRNFcWnGVXZfg8rlLTQjPM/bmQ6', 't', '2015-04-18 20:29:39 UTC', '2015-04-18 20:29:39', '2015-04-18 20:29:39', 187601757)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 24', 'user-24@example.com', '$2a$04$gGjEa2lCxRSltjbnkowCaOVCj4eSuBHN4bDgMdpYNvDAtPFzZolsS', 't', '2015-04-18 20:29:39 UTC', '2015-04-18 20:29:39', '2015-04-18 20:29:39', 357172992)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 25', 'user-25@example.com', '$2a$04$8TSiObaTkz1cdghZWlmB0epqL8QGs.FJ.xYNQYBt9KJSA8k/CF4yy', 't', '2015-04-18 20:29:39 UTC', '2015-04-18 20:29:39', '2015-04-18 20:29:39', 575485547)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 26', 'user-26@example.com', '$2a$04$jUPHqhXKfjSMXFay5p0JOeE/KAoYhb86gy14Q0hq6DHIu9GzRKTO.', 't', '2015-04-18 20:29:39 UTC', '2015-04-18 20:29:39', '2015-04-18 20:29:39', 994338771)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 27', 'user-27@example.com', '$2a$04$Repc6e4dOxLBq8is2wLNruzMFJ5dnYoMKrbuI3EPsGkwZFPRJqXH6', 't', '2015-04-18 20:29:39 UTC', '2015-04-18 20:29:39', '2015-04-18 20:29:39', 205739844)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 28', 'user-28@example.com', '$2a$04$9uez0hZUcHoRy8enZBdiWeL9z28QaWUQ/D4H7TvVmYISNxhm0bKdS', 't', '2015-04-18 20:29:39 UTC', '2015-04-18 20:29:39', '2015-04-18 20:29:39', 486296279)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 29', 'user-29@example.com', '$2a$04$JE1LK.iUWzgHL4kZFEwJJOYQ0Ohnd1BD1u34s4JJW4quwRsySESZ6', 't', '2015-04-18 20:29:39 UTC', '2015-04-18 20:29:39', '2015-04-18 20:29:39', 737901126)
+  [1m[36m (5.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------
+PasswordResetsTest: test_password_resets
+----------------------------------------
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 762146111]]
+Started GET "/password_resets/new" for 127.0.0.1 at 2015-04-18 16:29:39 -0400
+Processing by PasswordResetsController#new as HTML
+  Rendered password_resets/new.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 78ms (Views: 67.3ms | ActiveRecord: 0.0ms)
+Started POST "/password_resets" for 127.0.0.1 at 2015-04-18 16:29:40 -0400
+Processing by PasswordResetsController#create as HTML
+  Parameters: {"password_reset"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", ""]]
+  Rendered password_resets/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.2ms)
+Started POST "/password_resets" for 127.0.0.1 at 2015-04-18 16:29:40 -0400
+Processing by PasswordResetsController#create as HTML
+  Parameters: {"password_reset"=>"[FILTERED]"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "michael@example.com"]]
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "reset_digest" = '$2a$04$aQVZ1qaiUsI3QHFL8FgVUuE6yt6DbvfxA4BopNnsrnrLCkFUzh.Iq', "reset_sent_at" = '2015-04-18 20:29:40.091679' WHERE "users"."id" = ?  [["id", 762146111]]
+  Rendered user_mailer/password_reset.html.erb within layouts/mailer (2.4ms)
+  Rendered user_mailer/password_reset.text.erb within layouts/mailer (0.5ms)
+
+UserMailer#password_reset: processed outbound mail in 207.6ms
+
+Sent mail to michael@example.com (9.2ms)
+Date: Sat, 18 Apr 2015 16:29:40 -0400
+From: noreply@example.com
+To: michael@example.com
+Message-ID: <5532beb450762_d203ffb50460204425e9@nbp-165-41.nbp.ruw.rutgers.edu.mail>
+Subject: Password reset
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5532beb44e485_d203ffb5046020442422";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5532beb44e485_d203ffb5046020442422
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+To reset your password click the link below:
+
+http://localhost:3000/password_resets/JWjN30O7t2QiCzY6ZNPv0Q/edit?email=michael%40example.com
+
+This link will expire in two hours.
+
+If you did not request your password to be reset, please ignore this email and
+your password will stay as it is.
+
+----==_mimepart_5532beb44e485_d203ffb5046020442422
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <h1>Password reset</h1>
+
+<p>To reset your password click the link below:</p>
+
+<a href="http://localhost:3000/password_resets/JWjN30O7t2QiCzY6ZNPv0Q/edit?email=michael%40example.com">Reset password</a>
+
+<p>This link will expire in two hours.</p>
+
+<p>
+If you did not request your password to be reset, please ignore this email and
+your password will stay as it is.
+</p>
+  </body>
+</html>
+
+----==_mimepart_5532beb44e485_d203ffb5046020442422--
+
+Redirected to http://www.example.com/
+Completed 302 Found in 245ms (ActiveRecord: 0.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 762146111]]
+Started GET "/password_resets/JWjN30O7t2QiCzY6ZNPv0Q/edit?email=" for 127.0.0.1 at 2015-04-18 16:29:40 -0400
+Processing by PasswordResetsController#edit as HTML
+  Parameters: {"email"=>"", "id"=>"JWjN30O7t2QiCzY6ZNPv0Q"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", ""]]
+Redirected to http://www.example.com/
+Filter chain halted as :valid_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "activated" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["activated", "f"], ["updated_at", "2015-04-18 20:29:40.340542"], ["id", 762146111]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/password_resets/JWjN30O7t2QiCzY6ZNPv0Q/edit?email=michael%40example.com" for 127.0.0.1 at 2015-04-18 16:29:40 -0400
+Processing by PasswordResetsController#edit as HTML
+  Parameters: {"email"=>"michael@example.com", "id"=>"JWjN30O7t2QiCzY6ZNPv0Q"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "michael@example.com"]]
+Redirected to http://www.example.com/
+Filter chain halted as :valid_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  UPDATE "users" SET "activated" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["activated", "t"], ["updated_at", "2015-04-18 20:29:40.346573"], ["id", 762146111]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/password_resets/wrong%20token/edit?email=michael%40example.com" for 127.0.0.1 at 2015-04-18 16:29:40 -0400
+Processing by PasswordResetsController#edit as HTML
+  Parameters: {"email"=>"michael@example.com", "id"=>"wrong token"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "michael@example.com"]]
+Redirected to http://www.example.com/
+Filter chain halted as :valid_user rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms)
+Started GET "/password_resets/JWjN30O7t2QiCzY6ZNPv0Q/edit?email=michael%40example.com" for 127.0.0.1 at 2015-04-18 16:29:40 -0400
+Processing by PasswordResetsController#edit as HTML
+  Parameters: {"email"=>"michael@example.com", "id"=>"JWjN30O7t2QiCzY6ZNPv0Q"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "michael@example.com"]]
+  Rendered shared/_error_messages.html.erb (2.7ms)
+  Rendered password_resets/edit.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 23ms (Views: 18.5ms | ActiveRecord: 0.1ms)
+Started PATCH "/password_resets/JWjN30O7t2QiCzY6ZNPv0Q" for 127.0.0.1 at 2015-04-18 16:29:40 -0400
+Processing by PasswordResetsController#update as HTML
+  Parameters: {"email"=>"michael@example.com", "user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "id"=>"JWjN30O7t2QiCzY6ZNPv0Q"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "michael@example.com"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.6ms)[0m  SELECT  1 AS one FROM "users" WHERE (LOWER("users"."email") = LOWER('michael@example.com') AND "users"."id" != 762146111) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered shared/_error_messages.html.erb (0.7ms)
+  Rendered password_resets/edit.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 23ms (Views: 3.0ms | ActiveRecord: 0.8ms)
+Started PATCH "/password_resets/JWjN30O7t2QiCzY6ZNPv0Q" for 127.0.0.1 at 2015-04-18 16:29:40 -0400
+Processing by PasswordResetsController#update as HTML
+  Parameters: {"email"=>"michael@example.com", "user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "id"=>"JWjN30O7t2QiCzY6ZNPv0Q"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "michael@example.com"]]
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered password_resets/edit.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 5ms (Views: 2.2ms | ActiveRecord: 0.1ms)
+Started PATCH "/password_resets/JWjN30O7t2QiCzY6ZNPv0Q" for 127.0.0.1 at 2015-04-18 16:29:40 -0400
+Processing by PasswordResetsController#update as HTML
+  Parameters: {"email"=>"michael@example.com", "user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "id"=>"JWjN30O7t2QiCzY6ZNPv0Q"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "michael@example.com"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE (LOWER("users"."email") = LOWER('michael@example.com') AND "users"."id" != 762146111) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  UPDATE "users" SET "password_digest" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["password_digest", "$2a$04$O7TnEKkgI6y1Hh0qOu2mLumGuT24/kh6wzuxKgeSFOxPfP8r0UUne"], ["updated_at", "2015-04-18 20:29:40.422270"], ["id", 762146111]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users/762146111
+Completed 302 Found in 8ms (ActiveRecord: 0.4ms)
+  [1m[35m (6.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------
+StaticPagesControllerTest: test_should_get_home
+-----------------------------------------------
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 12ms (Views: 11.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+------------------------------------------------
+UsersSignupTest: test_invalid_signup_information
+------------------------------------------------
+Started GET "/signup" for 127.0.0.1 at 2015-04-18 16:29:40 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users"
+Started POST "/users" for 127.0.0.1 at 2015-04-18 16:29:40 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"", "email"=>"user@invalid", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@invalid') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered shared/_error_messages.html.erb (2.5ms)
+  Rendered users/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 12ms (Views: 5.2ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+----------------------------------------------------------------------
+UsersSignupTest: test_valid_signup_information_with_account_activation
+----------------------------------------------------------------------
+Started GET "/signup" for 127.0.0.1 at 2015-04-18 16:29:40 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+Started POST "/users" for 127.0.0.1 at 2015-04-18 16:29:40 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"Example User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at", "activation_digest") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Example User"], ["email", "user@example.com"], ["password_digest", "$2a$04$2znv361TWDxC9oEnjJdb/e1VCUdSwodLRIP6ZIyk7hZpjJ1Nhr.LO"], ["created_at", "2015-04-18 20:29:40.508568"], ["updated_at", "2015-04-18 20:29:40.508568"], ["activation_digest", "$2a$04$.pqp5NGE9Ub8phIVmr/5b.YaRKjZHBjx9X8cNdaEoeBUtu3jx5Muy"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Rendered user_mailer/account_activation.html.erb within layouts/mailer (2.2ms)
+  Rendered user_mailer/account_activation.text.erb within layouts/mailer (0.5ms)
+
+UserMailer#account_activation: processed outbound mail in 31.0ms
+
+Sent mail to user@example.com (3.1ms)
+Date: Sat, 18 Apr 2015 16:29:40 -0400
+From: noreply@example.com
+To: user@example.com
+Message-ID: <5532beb485769_d203ffb5046020442738@nbp-165-41.nbp.ruw.rutgers.edu.mail>
+Subject: Account activation
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5532beb48447a_d203ffb50460204426cc";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5532beb48447a_d203ffb50460204426cc
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi Example User,
+
+Welcome to the Sample App! Click on the link below to activate your account:
+
+http://localhost:3000/account_activations/l7x0JZjgMU8pGsU4KBuEGw/edit?email=user%40example.com
+
+----==_mimepart_5532beb48447a_d203ffb50460204426cc
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <h1>Sample App</h1>
+
+<p>Hi Example User,</p>
+
+<p>
+Welcome to the Sample App! Click on the link below to activate your account:
+</p>
+
+<a href="http://localhost:3000/account_activations/l7x0JZjgMU8pGsU4KBuEGw/edit?email=user%40example.com">Activate</a>
+  </body>
+</html>
+
+----==_mimepart_5532beb48447a_d203ffb50460204426cc--
+
+Redirected to http://www.example.com/
+Completed 302 Found in 44ms (ActiveRecord: 0.5ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users"
+Started POST "/login" for 127.0.0.1 at 2015-04-18 16:29:40 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"email"=>"user@example.com", "password"=>"[FILTERED]", "remember_me"=>"1"}}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "user@example.com"]]
+Redirected to http://www.example.com/
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms)
+Started GET "/account_activations/invalid%20token/edit" for 127.0.0.1 at 2015-04-18 16:29:40 -0400
+Processing by AccountActivationsController#edit as HTML
+  Parameters: {"id"=>"invalid token"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT 1
+Redirected to http://www.example.com/
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+Started GET "/account_activations/l7x0JZjgMU8pGsU4KBuEGw/edit?email=wrong" for 127.0.0.1 at 2015-04-18 16:29:40 -0400
+Processing by AccountActivationsController#edit as HTML
+  Parameters: {"email"=>"wrong", "id"=>"l7x0JZjgMU8pGsU4KBuEGw"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "wrong"]]
+Redirected to http://www.example.com/
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+Started GET "/account_activations/l7x0JZjgMU8pGsU4KBuEGw/edit?email=user%40example.com" for 127.0.0.1 at 2015-04-18 16:29:40 -0400
+Processing by AccountActivationsController#edit as HTML
+  Parameters: {"email"=>"user@example.com", "id"=>"l7x0JZjgMU8pGsU4KBuEGw"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "user@example.com"]]
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "activated" = 't', "activated_at" = '2015-04-18 20:29:40.574264' WHERE "users"."id" = ?[0m  [["id", 1046959424]]
+Redirected to http://www.example.com/users/1046959424
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1046959424]]
+Started GET "/users/1046959424" for 127.0.0.1 at 2015-04-18 16:29:40 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1046959424"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1046959424]]
+  [1m[35mBook Exists (0.2ms)[0m  SELECT  1 AS one FROM "books" WHERE "books"."user_id" = ? LIMIT 1  [["user_id", 1046959424]]
+  Rendered users/show.html.erb within layouts/application (4.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1046959424]]
+Completed 200 OK in 26ms (Views: 11.1ms | ActiveRecord: 0.3ms)
+  [1m[35m (3.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------------------------------
+UserTest: test_authenticated?_should_return_false_for_a_user_with_nil_digest
+----------------------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------
+UsersControllerTest: test_should_get_new
+----------------------------------------
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 4ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------------------
+BooksControllerTest: test_should_redirect_create_when_not_logged_in
+-------------------------------------------------------------------
+  [1m[35mBook Load (0.2ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 499495288]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "books"[0m
+Processing by BooksController#create as HTML
+  Parameters: {"book"=>{"name"=>"Intro to CS"}}
+Redirected to http://test.host/login
+Filter chain halted as :logged_in_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "books"
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+--------------------------------------------------------------------
+BooksControllerTest: test_should_redirect_destroy_when_not_logged_in
+--------------------------------------------------------------------
+  [1m[36mBook Load (0.1ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 499495288]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "books"
+Processing by BooksController#destroy as HTML
+  Parameters: {"id"=>"499495288"}
+Redirected to http://test.host/login
+Filter chain halted as :logged_in_user rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "books"[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+---------------------------------------
+UserMailerTest: test_account_activation
+---------------------------------------
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 762146111]]
+  Rendered user_mailer/account_activation.html.erb within layouts/mailer (0.3ms)
+  Rendered user_mailer/account_activation.text.erb within layouts/mailer (0.2ms)
+
+UserMailer#account_activation: processed outbound mail in 4.7ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-----------------------------------
+UserMailerTest: test_password_reset
+-----------------------------------
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 762146111]]
+  Rendered user_mailer/password_reset.html.erb within layouts/mailer (0.2ms)
+  Rendered user_mailer/password_reset.text.erb within layouts/mailer (0.2ms)
+
+UserMailer#password_reset: processed outbound mail in 4.6ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------
+UsersProfileTest: test_profile_display
+--------------------------------------
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 762146111]]
+Started GET "/users/762146111" for 127.0.0.1 at 2015-04-18 16:29:40 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"762146111"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 762146111]]
+  [1m[35mBook Exists (0.0ms)[0m  SELECT  1 AS one FROM "books" WHERE "books"."user_id" = ? LIMIT 1  [["user_id", 762146111]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 762146111]]
+  [1m[35mBook Load (0.3ms)[0m  SELECT "books".* FROM "books" WHERE "books"."user_id" = ?  ORDER BY "books"."created_at" DESC  [["user_id", 762146111]]
+  Rendered books/_book.html.erb (10.2ms)
+  Rendered users/show.html.erb within layouts/application (22.6ms)
+Completed 200 OK in 25ms (Views: 23.5ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 762146111]]
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------------------
+UsersLoginTest: test_login_with_valid_information_followed_by_logout
+--------------------------------------------------------------------
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 762146111]]
+Started GET "/login" for 127.0.0.1 at 2015-04-18 16:29:40 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2015-04-18 16:29:40 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"email"=>"michael@example.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "michael@example.com"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "remember_digest" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["remember_digest", "$2a$04$QVnWQ5XwRHkwKCZyGxuoIOwfTanZCH2n4u2f5V4NSW3DFQLFnh.pa"], ["updated_at", "2015-04-18 20:29:40.716750"], ["id", 762146111]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/users/762146111
+Completed 302 Found in 7ms (ActiveRecord: 0.5ms)
+Started GET "/users/762146111" for 127.0.0.1 at 2015-04-18 16:29:40 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"762146111"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 762146111]]
+  [1m[35mBook Exists (0.0ms)[0m  SELECT  1 AS one FROM "books" WHERE "books"."user_id" = ? LIMIT 1  [["user_id", 762146111]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 762146111]]
+  [1m[35mBook Load (0.2ms)[0m  SELECT "books".* FROM "books" WHERE "books"."user_id" = ?  ORDER BY "books"."created_at" DESC  [["user_id", 762146111]]
+  Rendered books/_book.html.erb (9.9ms)
+  Rendered users/show.html.erb within layouts/application (14.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 762146111]]
+Completed 200 OK in 17ms (Views: 15.2ms | ActiveRecord: 0.4ms)
+Started DELETE "/logout" for 127.0.0.1 at 2015-04-18 16:29:40 -0400
+Processing by SessionsController#destroy as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 762146111]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "remember_digest" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["remember_digest", nil], ["updated_at", "2015-04-18 20:29:40.746404"], ["id", 762146111]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+Started DELETE "/logout" for 127.0.0.1 at 2015-04-18 16:29:40 -0400
+Processing by SessionsController#destroy as HTML
+Redirected to http://www.example.com/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2015-04-18 16:29:40 -0400
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (5.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-------------------------------------------
+SessionsControllerTest: test_should_get_new
+-------------------------------------------
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+------------------------------------------------
+BookTest: test_order_should_be_most_recent_first
+------------------------------------------------
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 762146111]]
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT  "books".* FROM "books"  ORDER BY "books"."created_at" DESC LIMIT 1[0m
+  [1m[35mBook Load (0.1ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 941832919]]
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "books"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('I just ate an orange!', '2015-04-18 20:25:26 UTC', '2015-04-18 20:35:26', 499495288, 762146111)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Check out the @tauday site by @mhartl: http://tauday.com', '2012-04-18 20:35:26 UTC', '2015-04-18 20:35:26', 517500819, 762146111)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Sad cats are sad: http://youtu.be/PKffm2uI4dk', '2015-04-18 18:35:26 UTC', '2015-04-18 20:35:26', 12348100, 762146111)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Writing a short test', '2015-04-18 20:35:26 UTC', '2015-04-18 20:35:26', 941832919, 762146111)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Atque veniam id unde laudantium earum.', '2015-03-07 20:35:26 UTC', '2015-04-18 20:35:26', 177734013, 762146111)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Eaque necessitatibus quasi sit explicabo.', '2015-03-07 20:35:26 UTC', '2015-04-18 20:35:26', 1033843180, 762146111)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Incidunt voluptatem voluptas eius voluptas voluptates rem rerum.', '2015-03-07 20:35:26 UTC', '2015-04-18 20:35:26', 613834836, 762146111)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Voluptatem voluptas sunt rem tempore.', '2015-03-07 20:35:26 UTC', '2015-04-18 20:35:26', 328290505, 762146111)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Quaerat occaecati voluptatem officiis aut nisi debitis quis architecto.', '2015-03-07 20:35:26 UTC', '2015-04-18 20:35:26', 234210660, 762146111)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Omnis consequuntur eveniet nostrum magni accusantium iusto ea maiores.', '2015-03-07 20:35:26 UTC', '2015-04-18 20:35:26', 989001203, 762146111)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Iste non quia omnis dolorum officiis.', '2015-03-07 20:35:26 UTC', '2015-04-18 20:35:26', 603694155, 762146111)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Quod ut in neque consequatur occaecati.', '2015-03-07 20:35:26 UTC', '2015-04-18 20:35:26', 352097504, 762146111)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Consequuntur expedita dicta reiciendis omnis ea vel nam sit.', '2015-03-07 20:35:26 UTC', '2015-04-18 20:35:26', 71534927, 762146111)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Aut saepe qui eos ut beatae ut alias dolorum.', '2015-03-07 20:35:26 UTC', '2015-04-18 20:35:26', 860142042, 762146111)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Quibusdam ut culpa non eos et sed.', '2015-03-07 20:35:26 UTC', '2015-04-18 20:35:26', 58620899, 762146111)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Totam quia aut quos accusantium.', '2015-03-07 20:35:26 UTC', '2015-04-18 20:35:26', 880364408, 762146111)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Eaque qui at dolor molestiae eum sed.', '2015-03-07 20:35:26 UTC', '2015-04-18 20:35:26', 762321612, 762146111)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Eveniet voluptatem ex quo asperiores officiis illum repellendus praesentium.', '2015-03-07 20:35:26 UTC', '2015-04-18 20:35:26', 444017243, 762146111)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Perspiciatis ratione fugiat esse saepe ea.', '2015-03-07 20:35:26 UTC', '2015-04-18 20:35:26', 68403196, 762146111)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Soluta aut rem tenetur architecto molestias veritatis.', '2015-03-07 20:35:26 UTC', '2015-04-18 20:35:26', 856985457, 762146111)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Assumenda expedita molestias culpa voluptatem aut nulla velit.', '2015-03-07 20:35:26 UTC', '2015-04-18 20:35:26', 706600661, 762146111)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Velit architecto dolor rerum sed aut.', '2015-03-07 20:35:26 UTC', '2015-04-18 20:35:26', 488304196, 762146111)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Maiores id rerum reiciendis in aut nam et fugiat.', '2015-03-07 20:35:26 UTC', '2015-04-18 20:35:26', 228979669, 762146111)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Voluptas cum repellat magnam voluptatem quisquam a veniam libero.', '2015-03-07 20:35:26 UTC', '2015-04-18 20:35:26', 983745350, 762146111)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Iste ipsa autem suscipit eos.', '2015-03-07 20:35:26 UTC', '2015-04-18 20:35:26', 676538406, 762146111)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Et id voluptatem rerum necessitatibus fugit libero nihil.', '2015-03-07 20:35:26 UTC', '2015-04-18 20:35:26', 525605047, 762146111)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Quasi ad id nesciunt vel quisquam voluptatibus.', '2015-03-07 20:35:26 UTC', '2015-04-18 20:35:26', 106776847, 762146111)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Quas hic quo omnis accusantium maxime.', '2015-03-07 20:35:26 UTC', '2015-04-18 20:35:26', 828012954, 762146111)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Voluptatum facilis est distinctio voluptas vero a eveniet aspernatur.', '2015-03-07 20:35:26 UTC', '2015-04-18 20:35:26', 792652861, 762146111)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Harum hic facere nobis eius ut.', '2015-03-07 20:35:26 UTC', '2015-04-18 20:35:26', 406445230, 762146111)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Minima dolor ducimus quidem porro.', '2015-03-07 20:35:26 UTC', '2015-04-18 20:35:26', 19959062, 762146111)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Vitae inventore dolorem repellendus omnis eos autem.', '2015-03-07 20:35:26 UTC', '2015-04-18 20:35:26', 909622657, 762146111)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Et commodi doloribus corrupti dolores quidem pariatur aperiam ea.', '2015-03-07 20:35:26 UTC', '2015-04-18 20:35:26', 646488084, 762146111)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Dolorem quas totam voluptas voluptatum.', '2015-03-07 20:35:26 UTC', '2015-04-18 20:35:26', 294621321, 762146111)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('Michael Example', 'michael@example.com', '$2a$04$7e1.Sv9/hO4pbryY.T.gVeIwgyNuo9WaD7C30a/rvysIq.d6aE5DO', 't', '2015-04-18 20:35:26 UTC', '2015-04-18 20:35:26', '2015-04-18 20:35:26', 762146111)[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('Sterling Archer', 'duchess@example.gov', '$2a$04$J3jEdzbFvm59yqrfYBoHcuohRScNylga4DDf16dJ/N/EtZ5A8Pdkq', 't', '2015-04-18 20:35:26 UTC', '2015-04-18 20:35:26', '2015-04-18 20:35:26', 950961012)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('Lana Kane', 'hands@example.gov', '$2a$04$x.wb/vkaGoiYJtF0aRSzweFdXeVIl4o4AvIQpxvNDt60HMKII0.EO', 't', '2015-04-18 20:35:26 UTC', '2015-04-18 20:35:26', '2015-04-18 20:35:26', 409608538)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('Mallory Archer', 'boss@example.gov', '$2a$04$EvsHSw/uHv67lIXGHDYuIOp8xGPNRK8yTtXct9c9pdfocPuT/XrQ.', 't', '2015-04-18 20:35:26 UTC', '2015-04-18 20:35:26', '2015-04-18 20:35:26', 785162917)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 0', 'user-0@example.com', '$2a$04$BYXD8faRe7XA.Kszu9CO5OQvsEym.wPpWE8fubwQfxCFKFNg90CCe', 't', '2015-04-18 20:35:26 UTC', '2015-04-18 20:35:26', '2015-04-18 20:35:26', 338193910)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 1', 'user-1@example.com', '$2a$04$cLvN44hO2BHo4TfWGz2U8ePi55d3KNgE3VWWGu4fLEdr3xniMLLN6', 't', '2015-04-18 20:35:26 UTC', '2015-04-18 20:35:26', '2015-04-18 20:35:26', 590306657)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 2', 'user-2@example.com', '$2a$04$H4mciQdw9xkUowpjobmgDe7D0wZZOdBGsUJEpz79fFbSsdOU..T/C', 't', '2015-04-18 20:35:26 UTC', '2015-04-18 20:35:26', '2015-04-18 20:35:26', 975572189)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 3', 'user-3@example.com', '$2a$04$TC40m/cLW.V0rBSbLNZQrec7WMSO.r/5fPyHjinuscgahB9s6FLne', 't', '2015-04-18 20:35:26 UTC', '2015-04-18 20:35:26', '2015-04-18 20:35:26', 220281934)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 4', 'user-4@example.com', '$2a$04$8JLYyVErn7PmPBrpBKLx9eZTvHT7E/EUTOjaRgi1Wrwebjkmnf7z2', 't', '2015-04-18 20:35:26 UTC', '2015-04-18 20:35:26', '2015-04-18 20:35:26', 323332591)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 5', 'user-5@example.com', '$2a$04$ACj9iUQQ/z.lEZV5paFI4e352Dtjvtt06Ra85qOQWT5KYMAdGWBOm', 't', '2015-04-18 20:35:26 UTC', '2015-04-18 20:35:26', '2015-04-18 20:35:26', 608344442)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 6', 'user-6@example.com', '$2a$04$RWy7ffdPHe0vyg03Q.c82OX.vC.XqBtbb9EcOamcIkyrZzmzHmw7.', 't', '2015-04-18 20:35:26 UTC', '2015-04-18 20:35:26', '2015-04-18 20:35:26', 1028376774)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 7', 'user-7@example.com', '$2a$04$FvUzWr.hC6FNyKGmBjUWPerfhSuS8Fxfu3UhhddygNWavlYuOJC7u', 't', '2015-04-18 20:35:26 UTC', '2015-04-18 20:35:26', '2015-04-18 20:35:26', 172816471)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 8', 'user-8@example.com', '$2a$04$CsexmVAAeHVF0/Ibu/4QC..UWWoIF/y9ZjX/Sr8gI2nSrEEAR9Q7O', 't', '2015-04-18 20:35:26 UTC', '2015-04-18 20:35:26', '2015-04-18 20:35:26', 452191684)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 9', 'user-9@example.com', '$2a$04$2G5sKC8nhF8cEDyHSfE/h.OVC8nKCsYKuzfnRDpQA6QOCxdtgL/N.', 't', '2015-04-18 20:35:26 UTC', '2015-04-18 20:35:26', '2015-04-18 20:35:26', 771020115)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 10', 'user-10@example.com', '$2a$04$7wLSPAFX69qvVCPly8wtT.romVyrrYRNBfAU0HLOXSqgpkFza6HwO', 't', '2015-04-18 20:35:26 UTC', '2015-04-18 20:35:26', '2015-04-18 20:35:26', 956993830)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 11', 'user-11@example.com', '$2a$04$G58plvlMiN6ZiExZIC4VteYIUZOdjWtes7U5TqmI4F.ve9oFjLOn6', 't', '2015-04-18 20:35:26 UTC', '2015-04-18 20:35:26', '2015-04-18 20:35:26', 235774389)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 12', 'user-12@example.com', '$2a$04$6c3fgGH4kNkCBeaMIWHJuevqSWyRB3wQUPvjBA6lkVApRNjQsKty6', 't', '2015-04-18 20:35:26 UTC', '2015-04-18 20:35:26', '2015-04-18 20:35:26', 386199561)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 13', 'user-13@example.com', '$2a$04$Moeu0qoJNhYPi.ZCsdDwN.530xBPSRLHStJ/i/bzXGEqCJ0nRK6Gy', 't', '2015-04-18 20:35:26 UTC', '2015-04-18 20:35:26', '2015-04-18 20:35:26', 537116830)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 14', 'user-14@example.com', '$2a$04$5CDKOmXl.JoTY1APDmkDUuHb54N7/ES40Xv2lCvcHrXa4tLX23Dae', 't', '2015-04-18 20:35:26 UTC', '2015-04-18 20:35:26', '2015-04-18 20:35:26', 1046959423)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 15', 'user-15@example.com', '$2a$04$vedqFJNd3UlzXmiZmgnUw.3OoCGYzHMafwB3l3UyPmh/BGxx//MEm', 't', '2015-04-18 20:35:26 UTC', '2015-04-18 20:35:26', '2015-04-18 20:35:26', 157312430)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 16', 'user-16@example.com', '$2a$04$Jwb8uMfEslHUiqtLlAPHduv7boJTDsLDVT/HfPzpdyx54D9eVq.xa', 't', '2015-04-18 20:35:26 UTC', '2015-04-18 20:35:26', '2015-04-18 20:35:26', 275330066)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 17', 'user-17@example.com', '$2a$04$FFwjmfhk7jLZKoFPSbMdEu1jymOZaVpEkp/Vt1pkkKY7J3hyZQNuK', 't', '2015-04-18 20:35:26 UTC', '2015-04-18 20:35:26', '2015-04-18 20:35:26', 661521543)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 18', 'user-18@example.com', '$2a$04$AoW3LHNeK7rbkXY/VI0Rk.dc9.q6IklW4gx0Rt5xTrgu1V2UdZ02u', 't', '2015-04-18 20:35:26 UTC', '2015-04-18 20:35:26', '2015-04-18 20:35:26', 936450328)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 19', 'user-19@example.com', '$2a$04$fcD2/QmAjOcXX.qkbkALIOGjTbnWOO5ks7.s8Ewa4XGjXITE3TuvO', 't', '2015-04-18 20:35:26 UTC', '2015-04-18 20:35:26', '2015-04-18 20:35:26', 14035331)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 20', 'user-20@example.com', '$2a$04$O9PHk42whhwYvFIcvzSHe.sJrYvBVRc18IWgAsANbjGVIvm93KVFe', 't', '2015-04-18 20:35:26 UTC', '2015-04-18 20:35:26', '2015-04-18 20:35:26', 304595689)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 21', 'user-21@example.com', '$2a$04$9ZjpKvgA9/7EkSi4STumqeSnjAAJ9mLvIl/hZ1C3ol.EU0YzPf1U2', 't', '2015-04-18 20:35:26 UTC', '2015-04-18 20:35:26', '2015-04-18 20:35:26', 622916212)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 22', 'user-22@example.com', '$2a$04$wytP9MgSeDbshhQgS3M6weB5NOc459unkikeTIHG6Z.sYuOlKvO0S', 't', '2015-04-18 20:35:26 UTC', '2015-04-18 20:35:26', '2015-04-18 20:35:26', 1009361868)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 23', 'user-23@example.com', '$2a$04$dcvrw.HJA1PqXbrIRjNimeQEjwKIOr36lUxzgUjhL97nkEttr.ZgS', 't', '2015-04-18 20:35:26 UTC', '2015-04-18 20:35:26', '2015-04-18 20:35:26', 187601757)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 24', 'user-24@example.com', '$2a$04$XtzFnDUNQkJBfuHXYHFRL.oJpGvIVsIB/hj4QudqLEtS2m/AzRxb2', 't', '2015-04-18 20:35:26 UTC', '2015-04-18 20:35:26', '2015-04-18 20:35:26', 357172992)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 25', 'user-25@example.com', '$2a$04$dlBuqSf1w69OINgLQW0hBe2AztKM6M6jFK1LwuvtyDrqRDpxZgTEm', 't', '2015-04-18 20:35:26 UTC', '2015-04-18 20:35:26', '2015-04-18 20:35:26', 575485547)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 26', 'user-26@example.com', '$2a$04$WhqJ5.lZ05Ifv6m5McLZHeAmy3AIyhqY4dIFpoNaIls4e9INPcIGe', 't', '2015-04-18 20:35:26 UTC', '2015-04-18 20:35:26', '2015-04-18 20:35:26', 994338771)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 27', 'user-27@example.com', '$2a$04$ChNTknweCwRWCZaI3j0d8ex/UDkt3IOWik.iF3jCeuVl93.dRHuGS', 't', '2015-04-18 20:35:26 UTC', '2015-04-18 20:35:26', '2015-04-18 20:35:26', 205739844)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 28', 'user-28@example.com', '$2a$04$pXMRC5idoqDDJtzskfVhA.bO6YqhaqV5Ce8Y.FUgXiQNf8LLGYZFS', 't', '2015-04-18 20:35:26 UTC', '2015-04-18 20:35:26', '2015-04-18 20:35:26', 486296279)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 29', 'user-29@example.com', '$2a$04$vr2PCAoNhG11f61wo3m/VumHXBrkEYyXgL7HwtQ1cfC9vJthoQlGS', 't', '2015-04-18 20:35:26 UTC', '2015-04-18 20:35:26', '2015-04-18 20:35:26', 737901126)
+  [1m[36m (5.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-------------------------------------------
+SessionsControllerTest: test_should_get_new
+-------------------------------------------
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 66ms (Views: 65.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+----------------------------------------
+UsersControllerTest: test_should_get_new
+----------------------------------------
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (3.8ms)
+  Rendered users/new.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 33ms (Views: 24.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-----------------------------------------------
+StaticPagesControllerTest: test_should_get_home
+-----------------------------------------------
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 12ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+------------------------------------------------
+UsersSignupTest: test_invalid_signup_information
+------------------------------------------------
+Started GET "/signup" for 127.0.0.1 at 2015-04-18 16:35:26 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 12ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+Started POST "/users" for 127.0.0.1 at 2015-04-18 16:35:26 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"", "email"=>"user@invalid", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@invalid') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered shared/_error_messages.html.erb (2.7ms)
+  Rendered users/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 25ms (Views: 5.8ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------------------------
+UsersSignupTest: test_valid_signup_information_with_account_activation
+----------------------------------------------------------------------
+Started GET "/signup" for 127.0.0.1 at 2015-04-18 16:35:26 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users"
+Started POST "/users" for 127.0.0.1 at 2015-04-18 16:35:26 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"Example User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at", "activation_digest") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Example User"], ["email", "user@example.com"], ["password_digest", "$2a$04$FJdPnl3YVyTxjnwp6e9n1uimwJYO5N3uA9B.csX/x/dP73s29RL7K"], ["created_at", "2015-04-18 20:35:26.907384"], ["updated_at", "2015-04-18 20:35:26.907384"], ["activation_digest", "$2a$04$kHsrKbAY5VtvKOwCb0rDtu2M6k0eBmdNqa3y9A/qSL8CgD8sCOuTC"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered user_mailer/account_activation.html.erb within layouts/mailer (2.2ms)
+  Rendered user_mailer/account_activation.text.erb within layouts/mailer (0.5ms)
+
+UserMailer#account_activation: processed outbound mail in 216.6ms
+
+Sent mail to user@example.com (9.9ms)
+Date: Sat, 18 Apr 2015 16:35:27 -0400
+From: noreply@example.com
+To: user@example.com
+Message-ID: <5532c00f286e7_e153fe7148602009503c@nbp-165-41.nbp.ruw.rutgers.edu.mail>
+Subject: Account activation
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5532c00f24994_e153fe714860200949dc";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5532c00f24994_e153fe714860200949dc
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi Example User,
+
+Welcome to the Sample App! Click on the link below to activate your account:
+
+http://localhost:3000/account_activations/fMzhFjpI1QLQa9Tk5bAZXg/edit?email=user%40example.com
+
+----==_mimepart_5532c00f24994_e153fe714860200949dc
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <h1>Sample App</h1>
+
+<p>Hi Example User,</p>
+
+<p>
+Welcome to the Sample App! Click on the link below to activate your account:
+</p>
+
+<a href="http://localhost:3000/account_activations/fMzhFjpI1QLQa9Tk5bAZXg/edit?email=user%40example.com">Activate</a>
+  </body>
+</html>
+
+----==_mimepart_5532c00f24994_e153fe714860200949dc--
+
+Redirected to http://www.example.com/
+Completed 302 Found in 268ms (ActiveRecord: 0.6ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+Started POST "/login" for 127.0.0.1 at 2015-04-18 16:35:27 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"email"=>"user@example.com", "password"=>"[FILTERED]", "remember_me"=>"1"}}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "user@example.com"]]
+Redirected to http://www.example.com/
+Completed 302 Found in 9ms (ActiveRecord: 0.2ms)
+Started GET "/account_activations/invalid%20token/edit" for 127.0.0.1 at 2015-04-18 16:35:27 -0400
+Processing by AccountActivationsController#edit as HTML
+  Parameters: {"id"=>"invalid token"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+Started GET "/account_activations/fMzhFjpI1QLQa9Tk5bAZXg/edit?email=wrong" for 127.0.0.1 at 2015-04-18 16:35:27 -0400
+Processing by AccountActivationsController#edit as HTML
+  Parameters: {"email"=>"wrong", "id"=>"fMzhFjpI1QLQa9Tk5bAZXg"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "wrong"]]
+Redirected to http://www.example.com/
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+Started GET "/account_activations/fMzhFjpI1QLQa9Tk5bAZXg/edit?email=user%40example.com" for 127.0.0.1 at 2015-04-18 16:35:27 -0400
+Processing by AccountActivationsController#edit as HTML
+  Parameters: {"email"=>"user@example.com", "id"=>"fMzhFjpI1QLQa9Tk5bAZXg"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "user@example.com"]]
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "activated" = 't', "activated_at" = '2015-04-18 20:35:27.200773' WHERE "users"."id" = ?  [["id", 1046959424]]
+Redirected to http://www.example.com/users/1046959424
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1046959424]]
+Started GET "/users/1046959424" for 127.0.0.1 at 2015-04-18 16:35:27 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1046959424"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1046959424]]
+  [1m[36mBook Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "books" WHERE "books"."user_id" = ? LIMIT 1[0m  [["user_id", 1046959424]]
+  Rendered users/show.html.erb within layouts/application (5.5ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1046959424]]
+Completed 200 OK in 32ms (Views: 11.7ms | ActiveRecord: 0.6ms)
+  [1m[36m (4.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+--------------------------------------------------------------------
+BooksControllerTest: test_should_redirect_destroy_when_not_logged_in
+--------------------------------------------------------------------
+  [1m[36mBook Load (0.5ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 499495288]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "books"
+Processing by BooksController#destroy as HTML
+  Parameters: {"id"=>"499495288"}
+Redirected to http://test.host/login
+Filter chain halted as :logged_in_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "books"[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------------------
+BooksControllerTest: test_should_redirect_create_when_not_logged_in
+-------------------------------------------------------------------
+  [1m[35mBook Load (0.1ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 499495288]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "books"[0m
+Processing by BooksController#create as HTML
+  Parameters: {"book"=>{"name"=>"Intro to CS"}}
+Redirected to http://test.host/login
+Filter chain halted as :logged_in_user rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "books"
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+--------------------------------------
+UsersProfileTest: test_profile_display
+--------------------------------------
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 762146111]]
+Started GET "/users/762146111" for 127.0.0.1 at 2015-04-18 16:35:27 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"762146111"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 762146111]]
+  [1m[36mBook Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "books" WHERE "books"."user_id" = ? LIMIT 1[0m  [["user_id", 762146111]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ?  [["user_id", 762146111]]
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?  ORDER BY "books"."created_at" DESC[0m  [["user_id", 762146111]]
+  Rendered books/_book.html.erb (13.9ms)
+  Rendered users/show.html.erb within layouts/application (32.6ms)
+Completed 200 OK in 35ms (Views: 33.3ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ?  [["user_id", 762146111]]
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------
+PasswordResetsTest: test_password_resets
+----------------------------------------
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 762146111]]
+Started GET "/password_resets/new" for 127.0.0.1 at 2015-04-18 16:35:27 -0400
+Processing by PasswordResetsController#new as HTML
+  Rendered password_resets/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 17ms (Views: 16.8ms | ActiveRecord: 0.0ms)
+Started POST "/password_resets" for 127.0.0.1 at 2015-04-18 16:35:27 -0400
+Processing by PasswordResetsController#create as HTML
+  Parameters: {"password_reset"=>"[FILTERED]"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", ""]]
+  Rendered password_resets/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.1ms)
+Started POST "/password_resets" for 127.0.0.1 at 2015-04-18 16:35:27 -0400
+Processing by PasswordResetsController#create as HTML
+  Parameters: {"password_reset"=>"[FILTERED]"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "michael@example.com"]]
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "reset_digest" = '$2a$04$wxQ5Uyv8Ewi6jR6DAmikcOYn4AJNQbGKBkH7JU6jOMaYbYqrhV8Fa', "reset_sent_at" = '2015-04-18 20:35:27.358567' WHERE "users"."id" = ?  [["id", 762146111]]
+  Rendered user_mailer/password_reset.html.erb within layouts/mailer (2.3ms)
+  Rendered user_mailer/password_reset.text.erb within layouts/mailer (0.4ms)
+
+UserMailer#password_reset: processed outbound mail in 42.1ms
+
+Sent mail to michael@example.com (3.4ms)
+Date: Sat, 18 Apr 2015 16:35:27 -0400
+From: noreply@example.com
+To: michael@example.com
+Message-ID: <5532c00f630c2_e153fe7148602009526c@nbp-165-41.nbp.ruw.rutgers.edu.mail>
+Subject: Password reset
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5532c00f60699_e153fe714860200951b3";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5532c00f60699_e153fe714860200951b3
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+To reset your password click the link below:
+
+http://localhost:3000/password_resets/BZ3cKXmoart0LboePbDqZQ/edit?email=michael%40example.com
+
+This link will expire in two hours.
+
+If you did not request your password to be reset, please ignore this email and
+your password will stay as it is.
+
+----==_mimepart_5532c00f60699_e153fe714860200951b3
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <h1>Password reset</h1>
+
+<p>To reset your password click the link below:</p>
+
+<a href="http://localhost:3000/password_resets/BZ3cKXmoart0LboePbDqZQ/edit?email=michael%40example.com">Reset password</a>
+
+<p>This link will expire in two hours.</p>
+
+<p>
+If you did not request your password to be reset, please ignore this email and
+your password will stay as it is.
+</p>
+  </body>
+</html>
+
+----==_mimepart_5532c00f60699_e153fe714860200951b3--
+
+Redirected to http://www.example.com/
+Completed 302 Found in 53ms (ActiveRecord: 0.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 762146111]]
+Started GET "/password_resets/BZ3cKXmoart0LboePbDqZQ/edit?email=" for 127.0.0.1 at 2015-04-18 16:35:27 -0400
+Processing by PasswordResetsController#edit as HTML
+  Parameters: {"email"=>"", "id"=>"BZ3cKXmoart0LboePbDqZQ"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", ""]]
+Redirected to http://www.example.com/
+Filter chain halted as :valid_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "activated" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["activated", "f"], ["updated_at", "2015-04-18 20:35:27.414978"], ["id", 762146111]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/password_resets/BZ3cKXmoart0LboePbDqZQ/edit?email=michael%40example.com" for 127.0.0.1 at 2015-04-18 16:35:27 -0400
+Processing by PasswordResetsController#edit as HTML
+  Parameters: {"email"=>"michael@example.com", "id"=>"BZ3cKXmoart0LboePbDqZQ"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "michael@example.com"]]
+Redirected to http://www.example.com/
+Filter chain halted as :valid_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  UPDATE "users" SET "activated" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["activated", "t"], ["updated_at", "2015-04-18 20:35:27.421524"], ["id", 762146111]]
+  [1m[36m (0.5ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/password_resets/wrong%20token/edit?email=michael%40example.com" for 127.0.0.1 at 2015-04-18 16:35:27 -0400
+Processing by PasswordResetsController#edit as HTML
+  Parameters: {"email"=>"michael@example.com", "id"=>"wrong token"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "michael@example.com"]]
+Redirected to http://www.example.com/
+Filter chain halted as :valid_user rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms)
+Started GET "/password_resets/BZ3cKXmoart0LboePbDqZQ/edit?email=michael%40example.com" for 127.0.0.1 at 2015-04-18 16:35:27 -0400
+Processing by PasswordResetsController#edit as HTML
+  Parameters: {"email"=>"michael@example.com", "id"=>"BZ3cKXmoart0LboePbDqZQ"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "michael@example.com"]]
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered password_resets/edit.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 14ms (Views: 11.1ms | ActiveRecord: 0.1ms)
+Started PATCH "/password_resets/BZ3cKXmoart0LboePbDqZQ" for 127.0.0.1 at 2015-04-18 16:35:27 -0400
+Processing by PasswordResetsController#update as HTML
+  Parameters: {"email"=>"michael@example.com", "user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "id"=>"BZ3cKXmoart0LboePbDqZQ"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "michael@example.com"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE (LOWER("users"."email") = LOWER('michael@example.com') AND "users"."id" != 762146111) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered shared/_error_messages.html.erb (0.7ms)
+  Rendered password_resets/edit.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 14ms (Views: 3.1ms | ActiveRecord: 0.4ms)
+Started PATCH "/password_resets/BZ3cKXmoart0LboePbDqZQ" for 127.0.0.1 at 2015-04-18 16:35:27 -0400
+Processing by PasswordResetsController#update as HTML
+  Parameters: {"email"=>"michael@example.com", "user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "id"=>"BZ3cKXmoart0LboePbDqZQ"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "michael@example.com"]]
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered password_resets/edit.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 6ms (Views: 2.8ms | ActiveRecord: 0.1ms)
+Started PATCH "/password_resets/BZ3cKXmoart0LboePbDqZQ" for 127.0.0.1 at 2015-04-18 16:35:27 -0400
+Processing by PasswordResetsController#update as HTML
+  Parameters: {"email"=>"michael@example.com", "user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "id"=>"BZ3cKXmoart0LboePbDqZQ"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "michael@example.com"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE (LOWER("users"."email") = LOWER('michael@example.com') AND "users"."id" != 762146111) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  UPDATE "users" SET "password_digest" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["password_digest", "$2a$04$IZvilWzkbC6ivLvMBYP7..F5EhYjScE35Rv.l9Rf2mTzhgg61tAzG"], ["updated_at", "2015-04-18 20:35:27.479739"], ["id", 762146111]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users/762146111
+Completed 302 Found in 8ms (ActiveRecord: 0.4ms)
+  [1m[35m (3.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-----------------------------------
+UserMailerTest: test_password_reset
+-----------------------------------
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 762146111]]
+  Rendered user_mailer/password_reset.html.erb within layouts/mailer (0.3ms)
+  Rendered user_mailer/password_reset.text.erb within layouts/mailer (0.2ms)
+
+UserMailer#password_reset: processed outbound mail in 8.5ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+---------------------------------------
+UserMailerTest: test_account_activation
+---------------------------------------
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 762146111]]
+  Rendered user_mailer/account_activation.html.erb within layouts/mailer (0.3ms)
+  Rendered user_mailer/account_activation.text.erb within layouts/mailer (0.1ms)
+
+UserMailer#account_activation: processed outbound mail in 8.2ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+------------------------------------------------
+BookTest: test_order_should_be_most_recent_first
+------------------------------------------------
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 762146111]]
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT  "books".* FROM "books"  ORDER BY "books"."created_at" DESC LIMIT 1[0m
+  [1m[35mBook Load (0.1ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 941832919]]
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+--------------------------------------------------------------------
+UsersLoginTest: test_login_with_valid_information_followed_by_logout
+--------------------------------------------------------------------
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 762146111]]
+Started GET "/login" for 127.0.0.1 at 2015-04-18 16:35:27 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2015-04-18 16:35:27 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"email"=>"michael@example.com", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "michael@example.com"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "remember_digest" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["remember_digest", "$2a$04$R8Xx0VVbFBuRsy6wRNNpzOxJi3SoNJtqhYAK.nL1BoGd4cxW7EG/K"], ["updated_at", "2015-04-18 20:35:27.534855"], ["id", 762146111]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users/762146111
+Completed 302 Found in 7ms (ActiveRecord: 0.5ms)
+Started GET "/users/762146111" for 127.0.0.1 at 2015-04-18 16:35:27 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"762146111"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 762146111]]
+  [1m[36mBook Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "books" WHERE "books"."user_id" = ? LIMIT 1[0m  [["user_id", 762146111]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ?  [["user_id", 762146111]]
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?  ORDER BY "books"."created_at" DESC[0m  [["user_id", 762146111]]
+  Rendered books/_book.html.erb (16.8ms)
+  Rendered users/show.html.erb within layouts/application (21.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 762146111]]
+Completed 200 OK in 24ms (Views: 22.5ms | ActiveRecord: 0.5ms)
+Started DELETE "/logout" for 127.0.0.1 at 2015-04-18 16:35:27 -0400
+Processing by SessionsController#destroy as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 762146111]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "remember_digest" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["remember_digest", nil], ["updated_at", "2015-04-18 20:35:27.572391"], ["id", 762146111]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+Started DELETE "/logout" for 127.0.0.1 at 2015-04-18 16:35:27 -0400
+Processing by SessionsController#destroy as HTML
+Redirected to http://www.example.com/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2015-04-18 16:35:27 -0400
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (5.9ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------------------------------------
+UserTest: test_authenticated?_should_return_false_for_a_user_with_nil_digest
+----------------------------------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.6ms)[0m  [1mDELETE FROM "books"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('I just ate an orange!', '2015-04-18 20:27:37 UTC', '2015-04-18 20:37:38', 499495288, 762146111)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Check out the @tauday site by @mhartl: http://tauday.com', '2012-04-18 20:37:37 UTC', '2015-04-18 20:37:38', 517500819, 762146111)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Sad cats are sad: http://youtu.be/PKffm2uI4dk', '2015-04-18 18:37:37 UTC', '2015-04-18 20:37:38', 12348100, 762146111)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Writing a short test', '2015-04-18 20:37:37 UTC', '2015-04-18 20:37:38', 941832919, 762146111)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Nostrum incidunt et eum non adipisci exercitationem.', '2015-03-07 20:37:38 UTC', '2015-04-18 20:37:38', 177734013, 762146111)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Dolores incidunt sit sed ut illum culpa dolor laudantium.', '2015-03-07 20:37:38 UTC', '2015-04-18 20:37:38', 1033843180, 762146111)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Dolor quibusdam hic id et saepe fugiat inventore voluptatum eos.', '2015-03-07 20:37:38 UTC', '2015-04-18 20:37:38', 613834836, 762146111)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Iste sint omnis saepe et sunt voluptas veniam minus eius.', '2015-03-07 20:37:38 UTC', '2015-04-18 20:37:38', 328290505, 762146111)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Quisquam alias architecto odit animi id quis accusamus nesciunt.', '2015-03-07 20:37:38 UTC', '2015-04-18 20:37:38', 234210660, 762146111)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Exercitationem vitae quos repellat et incidunt maxime.', '2015-03-07 20:37:38 UTC', '2015-04-18 20:37:38', 989001203, 762146111)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Cumque veritatis dolorum quasi maiores aut modi sunt enim eius.', '2015-03-07 20:37:38 UTC', '2015-04-18 20:37:38', 603694155, 762146111)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Aut provident est praesentium eum consequatur cupiditate omnis illum rem.', '2015-03-07 20:37:38 UTC', '2015-04-18 20:37:38', 352097504, 762146111)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Eum suscipit aut minus totam.', '2015-03-07 20:37:38 UTC', '2015-04-18 20:37:38', 71534927, 762146111)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Sit dolor quae perspiciatis possimus.', '2015-03-07 20:37:38 UTC', '2015-04-18 20:37:38', 860142042, 762146111)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Eos suscipit veritatis ratione modi inventore.', '2015-03-07 20:37:38 UTC', '2015-04-18 20:37:38', 58620899, 762146111)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Ut culpa qui modi rerum quia ipsam.', '2015-03-07 20:37:38 UTC', '2015-04-18 20:37:38', 880364408, 762146111)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Magni quod optio excepturi autem natus numquam aut ipsam.', '2015-03-07 20:37:38 UTC', '2015-04-18 20:37:38', 762321612, 762146111)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Perferendis vel aut sapiente sed consequuntur.', '2015-03-07 20:37:38 UTC', '2015-04-18 20:37:38', 444017243, 762146111)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Sed debitis consequatur maxime magnam.', '2015-03-07 20:37:38 UTC', '2015-04-18 20:37:38', 68403196, 762146111)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Id facere nemo odio iusto molestiae dolor minus.', '2015-03-07 20:37:38 UTC', '2015-04-18 20:37:38', 856985457, 762146111)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Vel fugit earum qui error.', '2015-03-07 20:37:38 UTC', '2015-04-18 20:37:38', 706600661, 762146111)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Minima deleniti dolorum qui sed at qui.', '2015-03-07 20:37:38 UTC', '2015-04-18 20:37:38', 488304196, 762146111)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Quia non mollitia rem perspiciatis nulla praesentium aut et voluptatem.', '2015-03-07 20:37:38 UTC', '2015-04-18 20:37:38', 228979669, 762146111)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Qui minima consequatur id quidem eius expedita ad a totam.', '2015-03-07 20:37:38 UTC', '2015-04-18 20:37:38', 983745350, 762146111)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Quaerat architecto ipsum tenetur et sint eius quae ab.', '2015-03-07 20:37:38 UTC', '2015-04-18 20:37:38', 676538406, 762146111)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Aut quasi laudantium illo magni iusto velit accusamus sed.', '2015-03-07 20:37:38 UTC', '2015-04-18 20:37:38', 525605047, 762146111)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Iusto voluptatibus suscipit ratione omnis ipsa culpa ex.', '2015-03-07 20:37:38 UTC', '2015-04-18 20:37:38', 106776847, 762146111)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Vel sint molestiae qui et nisi laudantium aperiam sequi.', '2015-03-07 20:37:38 UTC', '2015-04-18 20:37:38', 828012954, 762146111)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Et aut quia id minus.', '2015-03-07 20:37:38 UTC', '2015-04-18 20:37:38', 792652861, 762146111)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Aut quisquam eos vel ea suscipit.', '2015-03-07 20:37:38 UTC', '2015-04-18 20:37:38', 406445230, 762146111)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Quasi sequi eum unde praesentium labore dolores animi iure.', '2015-03-07 20:37:38 UTC', '2015-04-18 20:37:38', 19959062, 762146111)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Aperiam ab aut vitae itaque dolor perferendis voluptas.', '2015-03-07 20:37:38 UTC', '2015-04-18 20:37:38', 909622657, 762146111)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Ea similique iusto eum ut facilis ad voluptates.', '2015-03-07 20:37:38 UTC', '2015-04-18 20:37:38', 646488084, 762146111)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "books" ("name", "created_at", "updated_at", "id", "user_id") VALUES ('Ratione et quae ea corrupti.', '2015-03-07 20:37:38 UTC', '2015-04-18 20:37:38', 294621321, 762146111)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('Michael Example', 'michael@example.com', '$2a$04$f7pTbuzkIQbLuYY7KAbtvOexHBx2/mLIP3KY2fiYK6tGDbrgHR7em', 't', '2015-04-18 20:37:38 UTC', '2015-04-18 20:37:38', '2015-04-18 20:37:38', 762146111)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('Sterling Archer', 'duchess@example.gov', '$2a$04$itAXd5vtulC54J5J.M6syeeMnwf69ofRxOicAnuslCpxMTDVY2b5.', 't', '2015-04-18 20:37:38 UTC', '2015-04-18 20:37:38', '2015-04-18 20:37:38', 950961012)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('Lana Kane', 'hands@example.gov', '$2a$04$3tqH0RAU3vVoB275m9P37OztR4QGPwLiKQtny9mqO0Z0Xr6/BDCda', 't', '2015-04-18 20:37:38 UTC', '2015-04-18 20:37:38', '2015-04-18 20:37:38', 409608538)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('Mallory Archer', 'boss@example.gov', '$2a$04$9Ew1gdQxImPc4liYWJ7sRuq4Ty0Hsgk.KqWiVLZPGcYWoSiIdBlRq', 't', '2015-04-18 20:37:38 UTC', '2015-04-18 20:37:38', '2015-04-18 20:37:38', 785162917)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 0', 'user-0@example.com', '$2a$04$W0LjXwVMKZcr1EAHB8ydGOWW3VjAM/yvF.CQhvc3oEn.y7xFrTciu', 't', '2015-04-18 20:37:38 UTC', '2015-04-18 20:37:38', '2015-04-18 20:37:38', 338193910)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 1', 'user-1@example.com', '$2a$04$k3dXgwrtmjARUD4rn5Pbf.5x.a82KA.RzRR0hvwmVzqfjv/i3txna', 't', '2015-04-18 20:37:38 UTC', '2015-04-18 20:37:38', '2015-04-18 20:37:38', 590306657)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 2', 'user-2@example.com', '$2a$04$1AAbRti0QEn.PSh4QPL6LeVoN7/s8uIoLajTb/dx/h4H.vK5dh3Cq', 't', '2015-04-18 20:37:38 UTC', '2015-04-18 20:37:38', '2015-04-18 20:37:38', 975572189)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 3', 'user-3@example.com', '$2a$04$i4kI3uxxv8UTTh0ua2vUjuZdmmkWgqlc/CCMOv2KFeABF7bd.rjEm', 't', '2015-04-18 20:37:38 UTC', '2015-04-18 20:37:38', '2015-04-18 20:37:38', 220281934)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 4', 'user-4@example.com', '$2a$04$iJxdUBbQ5FxVFwXZXln5Lu5/8wblcLsnixdmCRTdlFe3J5HL5XNbm', 't', '2015-04-18 20:37:38 UTC', '2015-04-18 20:37:38', '2015-04-18 20:37:38', 323332591)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 5', 'user-5@example.com', '$2a$04$O6z9JdoXH6by16kObZm0Qu0AOXBmBTnZvQQya6sK1svOVMIJGbmS2', 't', '2015-04-18 20:37:38 UTC', '2015-04-18 20:37:38', '2015-04-18 20:37:38', 608344442)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 6', 'user-6@example.com', '$2a$04$V5coATFzss8BGSFqRnYt8OuV2lz7WdDp88v9aLrl7ddjraKQUfzxy', 't', '2015-04-18 20:37:38 UTC', '2015-04-18 20:37:38', '2015-04-18 20:37:38', 1028376774)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 7', 'user-7@example.com', '$2a$04$eDnl6l40/ot.j8icE/UEsOZMroisjWn5yMzUKoZkCyldXbW07I42y', 't', '2015-04-18 20:37:38 UTC', '2015-04-18 20:37:38', '2015-04-18 20:37:38', 172816471)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 8', 'user-8@example.com', '$2a$04$ywux13bQnqOCtHazqSAbMeJ7V.asHZeDOMC9S2JnHilVnIXNolD3.', 't', '2015-04-18 20:37:38 UTC', '2015-04-18 20:37:38', '2015-04-18 20:37:38', 452191684)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 9', 'user-9@example.com', '$2a$04$lEi6Q3UTf0UrAH2QgLf.9.fAvL39W6PPLXvCIn.orhu6srA088eDW', 't', '2015-04-18 20:37:38 UTC', '2015-04-18 20:37:38', '2015-04-18 20:37:38', 771020115)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 10', 'user-10@example.com', '$2a$04$VT2SaDMesWwRB3Sogb7o7enGgHqkw5owk0oJlDvI7coqoFDQ4YdCq', 't', '2015-04-18 20:37:38 UTC', '2015-04-18 20:37:38', '2015-04-18 20:37:38', 956993830)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 11', 'user-11@example.com', '$2a$04$kFvUJqYnyJu0PCWHSi6atuku.iDi8S6IEnYa3XQLEORWvECqrcMQK', 't', '2015-04-18 20:37:38 UTC', '2015-04-18 20:37:38', '2015-04-18 20:37:38', 235774389)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 12', 'user-12@example.com', '$2a$04$MR9X1QKCVr5kytScvWDc6uacTZp0gY0idXMx9ggXGpssIzVuTx0/.', 't', '2015-04-18 20:37:38 UTC', '2015-04-18 20:37:38', '2015-04-18 20:37:38', 386199561)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 13', 'user-13@example.com', '$2a$04$UXjsWUISTK3Rwqf59HSrnu3dRACFjdyGmdj0CNxbeXnWO0zTR20re', 't', '2015-04-18 20:37:38 UTC', '2015-04-18 20:37:38', '2015-04-18 20:37:38', 537116830)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 14', 'user-14@example.com', '$2a$04$sL7Xg.zqw917latyyit/pOYPyBBWeyRnuYo80T0koBHYzjOx6l7De', 't', '2015-04-18 20:37:38 UTC', '2015-04-18 20:37:38', '2015-04-18 20:37:38', 1046959423)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 15', 'user-15@example.com', '$2a$04$04bQl2aau8E1VgKjQjNPDOXpMLw7LolcXkuubCMn3FHwEfrAM1KXO', 't', '2015-04-18 20:37:38 UTC', '2015-04-18 20:37:38', '2015-04-18 20:37:38', 157312430)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 16', 'user-16@example.com', '$2a$04$I994/xzGLJrJtB19oz8G5.C4G1So9FFVK6RLcXaa4EiV0roxZOskO', 't', '2015-04-18 20:37:38 UTC', '2015-04-18 20:37:38', '2015-04-18 20:37:38', 275330066)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 17', 'user-17@example.com', '$2a$04$HBs6XSi4BREx7TsmZxrCWO2ssk6cr5917bP8/uf5ANygJbHUqjEPy', 't', '2015-04-18 20:37:38 UTC', '2015-04-18 20:37:38', '2015-04-18 20:37:38', 661521543)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 18', 'user-18@example.com', '$2a$04$N8pI/g6zdeULDjDmsuE4AugTUxvUsqJ2Ph4nyXAUyg4mxSjbgSoRW', 't', '2015-04-18 20:37:38 UTC', '2015-04-18 20:37:38', '2015-04-18 20:37:38', 936450328)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 19', 'user-19@example.com', '$2a$04$CvApWmqyuA8PuPhGngOqmOgwdRUBUR0bvL7mQP93MuoPnh.Y.peWW', 't', '2015-04-18 20:37:38 UTC', '2015-04-18 20:37:38', '2015-04-18 20:37:38', 14035331)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 20', 'user-20@example.com', '$2a$04$XSNH8tANbSe8iGBkGFAT/.zFslOnQzHCOkFtbHYeAX0/7xDNyrLOC', 't', '2015-04-18 20:37:38 UTC', '2015-04-18 20:37:38', '2015-04-18 20:37:38', 304595689)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 21', 'user-21@example.com', '$2a$04$0RQGKL5VG8oRX8ByK0096exVAklSAt.aekmVA8i6S.Mvp510X7s7K', 't', '2015-04-18 20:37:38 UTC', '2015-04-18 20:37:38', '2015-04-18 20:37:38', 622916212)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 22', 'user-22@example.com', '$2a$04$UDbKruOfEjmLtN6oWl0sReloSMI/eTFDNWW8ErcE4AbeMxP9Ts3VK', 't', '2015-04-18 20:37:38 UTC', '2015-04-18 20:37:38', '2015-04-18 20:37:38', 1009361868)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 23', 'user-23@example.com', '$2a$04$vd6mn1VqHTFnBoZPf9CQCOZQM5KxRTiVZWi3mlv37uJtX26mdSVP2', 't', '2015-04-18 20:37:38 UTC', '2015-04-18 20:37:38', '2015-04-18 20:37:38', 187601757)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 24', 'user-24@example.com', '$2a$04$7N.VkTbkS5Pd2kzvxBMZ1efTddW08i2UmHPfPM5V9Y82ShIvjfEU6', 't', '2015-04-18 20:37:38 UTC', '2015-04-18 20:37:38', '2015-04-18 20:37:38', 357172992)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 25', 'user-25@example.com', '$2a$04$EBoet3dxxuibr0Wq61FEBO8fACA7Rfn7Hp.cokKTz.9RrLEEjZsvO', 't', '2015-04-18 20:37:38 UTC', '2015-04-18 20:37:38', '2015-04-18 20:37:38', 575485547)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 26', 'user-26@example.com', '$2a$04$FRnG2LpJeYJf/0McF0qUp.gc/Rlb/YUSDXqsdq/cfBFq2DIM/bVUi', 't', '2015-04-18 20:37:38 UTC', '2015-04-18 20:37:38', '2015-04-18 20:37:38', 994338771)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 27', 'user-27@example.com', '$2a$04$/TdffxBWzDxtLVxFafYsSui2kWy3eDOdO8mv7GEFmdwtlOja4dyCS', 't', '2015-04-18 20:37:38 UTC', '2015-04-18 20:37:38', '2015-04-18 20:37:38', 205739844)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 28', 'user-28@example.com', '$2a$04$aCJBe4/DY455LsYClkWdDOuR3NGmkKeopZrpaTO6UAX7jdRZiqeaW', 't', '2015-04-18 20:37:38 UTC', '2015-04-18 20:37:38', '2015-04-18 20:37:38', 486296279)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "activated", "activated_at", "created_at", "updated_at", "id") VALUES ('User 29', 'user-29@example.com', '$2a$04$qJPDS0jjxrBbCsbbeHiTneQds01DHf7TWTWC468gttIhDWqfvgI/i', 't', '2015-04-18 20:37:38 UTC', '2015-04-18 20:37:38', '2015-04-18 20:37:38', 737901126)
+  [1m[36m (6.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-----------------------------------
+UserMailerTest: test_password_reset
+-----------------------------------
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 762146111]]
+  Rendered user_mailer/password_reset.html.erb within layouts/mailer (3.6ms)
+  Rendered user_mailer/password_reset.text.erb within layouts/mailer (0.6ms)
+
+UserMailer#password_reset: processed outbound mail in 40.1ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+---------------------------------------
+UserMailerTest: test_account_activation
+---------------------------------------
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 762146111]]
+  Rendered user_mailer/account_activation.html.erb within layouts/mailer (2.1ms)
+  Rendered user_mailer/account_activation.text.erb within layouts/mailer (0.4ms)
+
+UserMailer#account_activation: processed outbound mail in 27.0ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------------------------------------
+UserTest: test_authenticated?_should_return_false_for_a_user_with_nil_digest
+----------------------------------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------
+BookTest: test_order_should_be_most_recent_first
+------------------------------------------------
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 762146111]]
+  [1m[35mBook Load (0.3ms)[0m  SELECT  "books".* FROM "books"  ORDER BY "books"."created_at" DESC LIMIT 1
+  [1m[36mBook Load (0.1ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 941832919]]
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+------------------------------------------------
+UsersSignupTest: test_invalid_signup_information
+------------------------------------------------
+Started GET "/signup" for 127.0.0.1 at 2015-04-18 16:37:38 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (2.9ms)
+  Rendered users/new.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 74ms (Views: 62.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users"
+Started POST "/users" for 127.0.0.1 at 2015-04-18 16:37:38 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"", "email"=>"user@invalid", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@invalid') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered shared/_error_messages.html.erb (5.4ms)
+  Rendered users/new.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 47ms (Views: 9.9ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+----------------------------------------------------------------------
+UsersSignupTest: test_valid_signup_information_with_account_activation
+----------------------------------------------------------------------
+Started GET "/signup" for 127.0.0.1 at 2015-04-18 16:37:38 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+Started POST "/users" for 127.0.0.1 at 2015-04-18 16:37:38 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"Example User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at", "activation_digest") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Example User"], ["email", "user@example.com"], ["password_digest", "$2a$04$pH20oCT17CLTMHVm/5q4Oe2/LnRVj8DhrFerYjRp2v05oymv5mSaW"], ["created_at", "2015-04-18 20:37:38.699376"], ["updated_at", "2015-04-18 20:37:38.699376"], ["activation_digest", "$2a$04$D0YLx5SH4BDBkGMrM7unAehtcSrkOWoCp8G0JehoK4QsnS0d.rggy"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Rendered user_mailer/account_activation.html.erb within layouts/mailer (0.3ms)
+  Rendered user_mailer/account_activation.text.erb within layouts/mailer (0.2ms)
+
+UserMailer#account_activation: processed outbound mail in 21.7ms
+
+Sent mail to user@example.com (5.7ms)
+Date: Sat, 18 Apr 2015 16:37:38 -0400
+From: noreply@example.com
+To: user@example.com
+Message-ID: <5532c092b2335_e6c3fbffe060204840@nbp-165-41.nbp.ruw.rutgers.edu.mail>
+Subject: Account activation
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5532c092ae834_e6c3fbffe0602047f";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5532c092ae834_e6c3fbffe0602047f
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi Example User,
+
+Welcome to the Sample App! Click on the link below to activate your account:
+
+http://localhost:3000/account_activations/qkZZ_M-QgOiHOlvay0HtCw/edit?email=user%40example.com
+
+----==_mimepart_5532c092ae834_e6c3fbffe0602047f
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <h1>Sample App</h1>
+
+<p>Hi Example User,</p>
+
+<p>
+Welcome to the Sample App! Click on the link below to activate your account:
+</p>
+
+<a href="http://localhost:3000/account_activations/qkZZ_M-QgOiHOlvay0HtCw/edit?email=user%40example.com">Activate</a>
+  </body>
+</html>
+
+----==_mimepart_5532c092ae834_e6c3fbffe0602047f--
+
+Redirected to http://www.example.com/
+Completed 302 Found in 40ms (ActiveRecord: 0.5ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users"
+Started POST "/login" for 127.0.0.1 at 2015-04-18 16:37:38 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"email"=>"user@example.com", "password"=>"[FILTERED]", "remember_me"=>"1"}}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "user@example.com"]]
+Redirected to http://www.example.com/
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+Started GET "/account_activations/invalid%20token/edit" for 127.0.0.1 at 2015-04-18 16:37:38 -0400
+Processing by AccountActivationsController#edit as HTML
+  Parameters: {"id"=>"invalid token"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT 1
+Redirected to http://www.example.com/
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+Started GET "/account_activations/qkZZ_M-QgOiHOlvay0HtCw/edit?email=wrong" for 127.0.0.1 at 2015-04-18 16:37:38 -0400
+Processing by AccountActivationsController#edit as HTML
+  Parameters: {"email"=>"wrong", "id"=>"qkZZ_M-QgOiHOlvay0HtCw"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "wrong"]]
+Redirected to http://www.example.com/
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+Started GET "/account_activations/qkZZ_M-QgOiHOlvay0HtCw/edit?email=user%40example.com" for 127.0.0.1 at 2015-04-18 16:37:38 -0400
+Processing by AccountActivationsController#edit as HTML
+  Parameters: {"email"=>"user@example.com", "id"=>"qkZZ_M-QgOiHOlvay0HtCw"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "user@example.com"]]
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "activated" = 't', "activated_at" = '2015-04-18 20:37:38.761843' WHERE "users"."id" = ?[0m  [["id", 1046959424]]
+Redirected to http://www.example.com/users/1046959424
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1046959424]]
+Started GET "/users/1046959424" for 127.0.0.1 at 2015-04-18 16:37:38 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1046959424"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1046959424]]
+  [1m[35mBook Exists (0.1ms)[0m  SELECT  1 AS one FROM "books" WHERE "books"."user_id" = ? LIMIT 1  [["user_id", 1046959424]]
+  Rendered users/show.html.erb within layouts/application (3.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1046959424]]
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.2ms)
+  [1m[35m (4.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------------------
+UsersLoginTest: test_login_with_valid_information_followed_by_logout
+--------------------------------------------------------------------
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 762146111]]
+Started GET "/login" for 127.0.0.1 at 2015-04-18 16:37:38 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2015-04-18 16:37:38 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"email"=>"michael@example.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "michael@example.com"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "remember_digest" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["remember_digest", "$2a$04$vODIqljkxVHiNZZvXwhUR.25XyW8dl5LyfAtsVv3NT001WcCf9f4."], ["updated_at", "2015-04-18 20:37:38.815727"], ["id", 762146111]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/users/762146111
+Completed 302 Found in 8ms (ActiveRecord: 0.5ms)
+Started GET "/users/762146111" for 127.0.0.1 at 2015-04-18 16:37:38 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"762146111"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 762146111]]
+  [1m[35mBook Exists (0.0ms)[0m  SELECT  1 AS one FROM "books" WHERE "books"."user_id" = ? LIMIT 1  [["user_id", 762146111]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 762146111]]
+  [1m[35mBook Load (0.2ms)[0m  SELECT "books".* FROM "books" WHERE "books"."user_id" = ?  ORDER BY "books"."created_at" DESC  [["user_id", 762146111]]
+  Rendered books/_book.html.erb (10.6ms)
+  Rendered users/show.html.erb within layouts/application (19.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 762146111]]
+Completed 200 OK in 22ms (Views: 20.0ms | ActiveRecord: 0.5ms)
+Started DELETE "/logout" for 127.0.0.1 at 2015-04-18 16:37:38 -0400
+Processing by SessionsController#destroy as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 762146111]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "remember_digest" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["remember_digest", nil], ["updated_at", "2015-04-18 20:37:38.851540"], ["id", 762146111]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+Started DELETE "/logout" for 127.0.0.1 at 2015-04-18 16:37:38 -0400
+Processing by SessionsController#destroy as HTML
+Redirected to http://www.example.com/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2015-04-18 16:37:38 -0400
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (5.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------
+StaticPagesControllerTest: test_should_get_home
+-----------------------------------------------
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------
+UsersControllerTest: test_should_get_new
+----------------------------------------
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------
+PasswordResetsTest: test_password_resets
+----------------------------------------
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 762146111]]
+Started GET "/password_resets/new" for 127.0.0.1 at 2015-04-18 16:37:38 -0400
+Processing by PasswordResetsController#new as HTML
+  Rendered password_resets/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+Started POST "/password_resets" for 127.0.0.1 at 2015-04-18 16:37:38 -0400
+Processing by PasswordResetsController#create as HTML
+  Parameters: {"password_reset"=>"[FILTERED]"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", ""]]
+  Rendered password_resets/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms)
+Started POST "/password_resets" for 127.0.0.1 at 2015-04-18 16:37:38 -0400
+Processing by PasswordResetsController#create as HTML
+  Parameters: {"password_reset"=>"[FILTERED]"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "michael@example.com"]]
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "reset_digest" = '$2a$04$.tMDrD9zWgpAZ52fA0DJfeCM6KJFVHZ8SCOxYae/44./gldZuM/jK', "reset_sent_at" = '2015-04-18 20:37:38.930254' WHERE "users"."id" = ?[0m  [["id", 762146111]]
+  Rendered user_mailer/password_reset.html.erb within layouts/mailer (0.3ms)
+  Rendered user_mailer/password_reset.text.erb within layouts/mailer (0.2ms)
+
+UserMailer#password_reset: processed outbound mail in 18.8ms
+
+Sent mail to michael@example.com (3.4ms)
+Date: Sat, 18 Apr 2015 16:37:38 -0400
+From: noreply@example.com
+To: michael@example.com
+Message-ID: <5532c092e8c8e_e6c3fbffe0602041051@nbp-165-41.nbp.ruw.rutgers.edu.mail>
+Subject: Password reset
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5532c092e5e42_e6c3fbffe0602049ad";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5532c092e5e42_e6c3fbffe0602049ad
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+To reset your password click the link below:
+
+http://localhost:3000/password_resets/gOcSgxnTf3TpM4HrBenzjg/edit?email=michael%40example.com
+
+This link will expire in two hours.
+
+If you did not request your password to be reset, please ignore this email and
+your password will stay as it is.
+
+----==_mimepart_5532c092e5e42_e6c3fbffe0602049ad
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <h1>Password reset</h1>
+
+<p>To reset your password click the link below:</p>
+
+<a href="http://localhost:3000/password_resets/gOcSgxnTf3TpM4HrBenzjg/edit?email=michael%40example.com">Reset password</a>
+
+<p>This link will expire in two hours.</p>
+
+<p>
+If you did not request your password to be reset, please ignore this email and
+your password will stay as it is.
+</p>
+  </body>
+</html>
+
+----==_mimepart_5532c092e5e42_e6c3fbffe0602049ad--
+
+Redirected to http://www.example.com/
+Completed 302 Found in 28ms (ActiveRecord: 0.4ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 762146111]]
+Started GET "/password_resets/gOcSgxnTf3TpM4HrBenzjg/edit?email=" for 127.0.0.1 at 2015-04-18 16:37:38 -0400
+Processing by PasswordResetsController#edit as HTML
+  Parameters: {"email"=>"", "id"=>"gOcSgxnTf3TpM4HrBenzjg"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", ""]]
+Redirected to http://www.example.com/
+Filter chain halted as :valid_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "activated" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["activated", "f"], ["updated_at", "2015-04-18 20:37:38.962342"], ["id", 762146111]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/password_resets/gOcSgxnTf3TpM4HrBenzjg/edit?email=michael%40example.com" for 127.0.0.1 at 2015-04-18 16:37:38 -0400
+Processing by PasswordResetsController#edit as HTML
+  Parameters: {"email"=>"michael@example.com", "id"=>"gOcSgxnTf3TpM4HrBenzjg"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "michael@example.com"]]
+Redirected to http://www.example.com/
+Filter chain halted as :valid_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "users" SET "activated" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["activated", "t"], ["updated_at", "2015-04-18 20:37:38.967951"], ["id", 762146111]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/password_resets/wrong%20token/edit?email=michael%40example.com" for 127.0.0.1 at 2015-04-18 16:37:38 -0400
+Processing by PasswordResetsController#edit as HTML
+  Parameters: {"email"=>"michael@example.com", "id"=>"wrong token"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "michael@example.com"]]
+Redirected to http://www.example.com/
+Filter chain halted as :valid_user rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms)
+Started GET "/password_resets/gOcSgxnTf3TpM4HrBenzjg/edit?email=michael%40example.com" for 127.0.0.1 at 2015-04-18 16:37:38 -0400
+Processing by PasswordResetsController#edit as HTML
+  Parameters: {"email"=>"michael@example.com", "id"=>"gOcSgxnTf3TpM4HrBenzjg"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "michael@example.com"]]
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered password_resets/edit.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 13ms (Views: 8.7ms | ActiveRecord: 0.1ms)
+Started PATCH "/password_resets/gOcSgxnTf3TpM4HrBenzjg" for 127.0.0.1 at 2015-04-18 16:37:38 -0400
+Processing by PasswordResetsController#update as HTML
+  Parameters: {"email"=>"michael@example.com", "user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "id"=>"gOcSgxnTf3TpM4HrBenzjg"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "michael@example.com"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE (LOWER("users"."email") = LOWER('michael@example.com') AND "users"."id" != 762146111) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered shared/_error_messages.html.erb (0.7ms)
+  Rendered password_resets/edit.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 14ms (Views: 2.9ms | ActiveRecord: 0.3ms)
+Started PATCH "/password_resets/gOcSgxnTf3TpM4HrBenzjg" for 127.0.0.1 at 2015-04-18 16:37:39 -0400
+Processing by PasswordResetsController#update as HTML
+  Parameters: {"email"=>"michael@example.com", "user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "id"=>"gOcSgxnTf3TpM4HrBenzjg"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "michael@example.com"]]
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered password_resets/edit.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 6ms (Views: 2.6ms | ActiveRecord: 0.1ms)
+Started PATCH "/password_resets/gOcSgxnTf3TpM4HrBenzjg" for 127.0.0.1 at 2015-04-18 16:37:39 -0400
+Processing by PasswordResetsController#update as HTML
+  Parameters: {"email"=>"michael@example.com", "user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "id"=>"gOcSgxnTf3TpM4HrBenzjg"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "michael@example.com"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE (LOWER("users"."email") = LOWER('michael@example.com') AND "users"."id" != 762146111) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "users" SET "password_digest" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["password_digest", "$2a$04$BvBogBrtM4/ncrtMkrDtaehg7xnvjGg4FU.rNMe8k48R7WZFOAk1a"], ["updated_at", "2015-04-18 20:37:39.025751"], ["id", 762146111]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/users/762146111
+Completed 302 Found in 8ms (ActiveRecord: 0.4ms)
+  [1m[36m (4.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-------------------------------------------
+SessionsControllerTest: test_should_get_new
+-------------------------------------------
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+--------------------------------------
+UsersProfileTest: test_profile_display
+--------------------------------------
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 762146111]]
+Started GET "/users/762146111" for 127.0.0.1 at 2015-04-18 16:37:39 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"762146111"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 762146111]]
+  [1m[36mBook Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "books" WHERE "books"."user_id" = ? LIMIT 1[0m  [["user_id", 762146111]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ?  [["user_id", 762146111]]
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?  ORDER BY "books"."created_at" DESC[0m  [["user_id", 762146111]]
+  Rendered books/_book.html.erb (10.2ms)
+  Rendered users/show.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "books" WHERE "books"."user_id" = ?  [["user_id", 762146111]]
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------------------------------
+BooksControllerTest: test_should_redirect_create_when_not_logged_in
+-------------------------------------------------------------------
+  [1m[36mBook Load (0.1ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 499495288]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "books"
+Processing by BooksController#create as HTML
+  Parameters: {"book"=>{"name"=>"Intro to CS"}}
+Redirected to http://test.host/login
+Filter chain halted as :logged_in_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "books"[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------------------
+BooksControllerTest: test_should_redirect_destroy_when_not_logged_in
+--------------------------------------------------------------------
+  [1m[35mBook Load (0.1ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 499495288]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "books"[0m
+Processing by BooksController#destroy as HTML
+  Parameters: {"id"=>"499495288"}
+Redirected to http://test.host/login
+Filter chain halted as :logged_in_user rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "books"
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m

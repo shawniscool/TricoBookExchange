@@ -1,3 +1,93 @@
+<span>Hashes below: <br> 
+	<%= @hashes.inspect() %>
+	<br> <br>
+	<% @hashes.each do |college,hash| %>
+		college: <%= college %>
+		<% hash.each do |department, courseSet| %>
+			<%= department %>
+			<% courseSet.each do |courseNumber| %>
+				<%= courseNumber %>
+			<% end %>
+		<% end %>
+	<% end %>
+</span>
+
+	<br> <br>
+	<% li = "" %>
+	<% @hashes.keys.sort.each do |college| %>
+		<% li += "<li class='icon icon-arrow-left'><a class='icon icon-display college' href= '#'>" %>
+		<% li += college + "</a><div class='mp-level'><h2 class='icon icon-display'>" + college %>
+		<% li += "</h2><a class='mp-back' href ='#'>back</a><ul>" %>
+
+		<% @hashes[college].keys.sort.each do |department| %>
+			<% li += "<li class='icon icon-arrow-left'><a class = 'icon department' href='#'>" %>
+			<% li += department + "</a><div class='mp-level'><h2>" + department +"</h2>" %>
+			<% li += "<a class='mp-back' href='#'>back</a><ul>" %>
+			<% @hashes[college][department].each do |num| %>
+				<% li += "<li><a href='#'>" + num + "</a></li>" %>
+			<% end %>
+			<% li += "</ul></div></li>" %>
+		<% end %>
+		<% li += "</ul></div></li>" %>
+	<% end %>
+
+
+<div class="container">
+			<!-- Push Wrapper -->
+			<div class="mp-pusher" id="mp-pusher">
+				<!-- mp-menu -->
+				<nav id="mp-menu" class="mp-menu">
+					<div class="mp-level">
+						<h2 class="icon icon-world">College</h2>
+						<ul>
+							<%= li.html_safe %>
+							<!-- <li class="icon icon-arrow-left"><a class="icon icon-display college" href="#">Swarthmore
+							</a><div class="mp-level"><h2 class="icon icon-display">Swarthmore
+							</h2><a class="mp-back" href="#">back</a><ul id = "SwatClasses">
+
+							<li class="icon icon-arrow-left"><a class="icon icon-phone department" href="#">
+							Computer Science</a><div class="mp-level"><h2>Computer Science</h2>
+							<a class="mp-back" href="#">back</a><ul id = "111">
+													<li><a href="#">021</a></li>
+													<li><a href="#">031</a></li>
+													<li><a href="#">035</a></li>
+													<li><a href="#">044</a></li>
+							</ul></div></li></ul></div></li> -->
+						</ul>
+					</div>
+				</nav>
+				<!-- /mp-menu
+
+				<div class="scroller"><!-- this is for emulating position fixed of the nav -->
+				
+					<div class="scroller-inner">
+						<header class="codrops-header">
+							<h1 id="heading"><strong><%= link_to "Trico Book Exchange", root_path  %></strong> 
+								<div class = "block-button">
+								<button class="border sellButton">
+
+									<a href= "#" id ="sell">Sell Your Textbooks</a></button> </div><span>Buy and sell used textbooks
+							</span></h1><a href="#" id="triggerReturn" class="menu-trigger">Return</a>
+						</header>
+						
+
+						<div class="content clearfix">
+							<table>
+							<div class="block block-60">
+								<p>Looking to <strong>buy</strong>?</p>
+								
+								<p1><a href="#" id="trigger" class="menu-trigger">Browse all textbooks</a></p1><br><br><br><br>
+								<p>Looking to <strong>sell</strong>? </p>
+								<p1>Fill out the form below to sell a book. </p1>
+							</div>
+							<div class ="block block-40" id="Description">
+								 <p2>Welcome to the TriCo Book Exchange! Save money and paper by buying or selling used textbooks. Browse textbooks for sale by college, department, and course, or post your own to sell.</p2> 
+							</div>
+							</table>
+						</div>
+					</div><!-- /scroller-inner -->
+					<div id ="loadItems"></div>
+</div>
 <h1>Sample App</h1>
 <p>
   This is the home page for the

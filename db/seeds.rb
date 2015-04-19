@@ -25,7 +25,15 @@ User.create!(name:  "Example User",
 end
 
 users = User.order(:created_at).take(6)
-50.times do
+50.times do |n|
   name = Faker::Lorem.sentence(5)
-  users.each { |user| user.books.create!(name: name) }
+  users.each { |user| user.books.create!(name: name, college:"Swarthmore College", department:"Mathematics", courseNumber: n%5) }
+  users.each { |user| user.books.create!(name: name, college:"Swarthmore College", department:"Computer Science", courseNumber: n%5) }
+  users.each { |user| user.books.create!(name: name, college:"Swarthmore College", department:"Political Science", courseNumber: n%5) }
+  users.each { |user| user.books.create!(name: name, college:"Swarthmore College", department:"English Literature", courseNumber: n%5) }
+  users.each { |user| user.books.create!(name: name, college:"Harvard University", department:"Computer Science", courseNumber: n%5) }
+  users.each { |user| user.books.create!(name: name, college:"Harverford College", department:"Computer Science", courseNumber: n%5) }
+  users.each { |user| user.books.create!(name: name, college:"University of Maryland", department:"Computer Science", courseNumber: n%5) }
+  users.each { |user| user.books.create!(name: name, college:"Rutgers University", department:"Computer Science", courseNumber: n%5) }
+
 end
