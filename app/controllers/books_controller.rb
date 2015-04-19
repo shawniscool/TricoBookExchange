@@ -25,7 +25,7 @@ class BooksController < ApplicationController
 
 	def find
 		respond_to do |format|
-			@books = Book.where("college = ? AND department = ? AND coursenumber = ?", params[:college],params[:department],params[:coursenumber].to_i)
+			@books = Book.where("college = ? AND department = ? AND coursenumber = ?", params[:college],params[:department],params[:coursenumber])
 			puts "size of books is " + @books.size.to_s
 			format.html {render @books}
 			format.js {render @books}
