@@ -21,7 +21,7 @@ $('#triggerReturn').on('click',function(e){
 		console.log("department now is " + $department.text() + " and college is " + $college.text() + " and course number is "+  $coursenumber.text());
 		$.ajax({type:'GET',
 						url:'/find',
-						data:{college:$college.text(),department:$department.text(), courseNumber:$coursenumber.text()},
+						data:{college:$college.text(),department:$department.text(), coursenumber:$coursenumber.text()},
 						success:function(books){
 							// books are returned from book controller render
 							console.log("sent ajax call");
