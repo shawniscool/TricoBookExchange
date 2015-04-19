@@ -11,14 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150419095312) do
+ActiveRecord::Schema.define(version: 20150419111849) do
 
   create_table "books", force: :cascade do |t|
     t.string   "name"
     t.string   "college"
     t.string   "condition"
     t.text     "additional"
-    t.string   "courseNumber"
+    t.string   "coursenumber"
     t.string   "department"
     t.float    "price"
     t.integer  "user_id"
