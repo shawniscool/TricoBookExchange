@@ -1,0 +1,1092 @@
+/* line 1, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/component.css.scss */
+*,
+*:after,
+*::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 9, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/component.css.scss */
+html, body, .container, .scroller {
+  height: 100%;
+}
+
+/* line 13, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/component.css.scss */
+html, body {
+  /*height:100%;*/
+  /*position:fixed;*/
+}
+
+/* line 18, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/component.css.scss */
+.scroller {
+  overflow-y: scroll;
+}
+
+/* line 22, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/component.css.scss */
+.scroller,
+.scroller-inner {
+  position: relative;
+}
+
+/* line 27, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/component.css.scss */
+.container {
+  position: relative;
+  overflow: hidden;
+  background: url(/assets/background-1a7cd70cf21a25278348d7306277e525.jpg);
+  background-size: 2000px 1290px;
+  background-repeat: repeat;
+}
+
+/* line 36, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/component.css.scss */
+.verticalLine {
+  border-center: thick solid #ff0000;
+}
+
+/* line 39, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/component.css.scss */
+.background {
+  -webkit-filter: blur(5px);
+}
+
+/* line 43, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/component.css.scss */
+.menu-trigger {
+  position: relative;
+  padding-left: 60px;
+  font-size: 0.9em;
+}
+
+/* line 49, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/component.css.scss */
+.menu-trigger:before {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 40px;
+  height: 6px;
+  background: #fff;
+  box-shadow: 0 6px transparent, 0 12px #fff, 0 18px transparent, 0 24px #fff;
+  box-shadow: 0 6px transparent, 0 12px #fff, 0 18px transparent, 0 24px #fff;
+  content: '';
+}
+
+/* line 61, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/component.css.scss */
+.mp-pusher {
+  position: relative;
+  left: 0;
+  height: 100%;
+}
+
+/* line 67, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/component.css.scss */
+.mp-menu {
+  position: absolute;
+  /* we can't use fixed here :( */
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 300px;
+  height: 100%;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  -moz-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+}
+
+/* line 79, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/component.css.scss */
+.mp-level {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #336ca6;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  -moz-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+}
+
+/* overlays for pusher and for level that gets covered */
+/* line 92, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/component.css.scss */
+.mp-pusher::after,
+.mp-level::after,
+.mp-level::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  content: '';
+  opacity: 0;
+}
+
+/* line 104, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/component.css.scss */
+.mp-pusher::after,
+.mp-level::after {
+  background: rgba(0, 0, 0, 0.3);
+  -webkit-transition: opacity 0.3s, width 0.1s 0.3s, height 0.1s 0.3s;
+  -moz-transition: opacity 0.3s, width 0.1s 0.3s, height 0.1s 0.3s;
+  transition: opacity 0.3s, width 0.1s 0.3s, height 0.1s 0.3s;
+}
+
+/* line 112, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/component.css.scss */
+.mp-level::after {
+  z-index: -1;
+}
+
+/* line 116, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/component.css.scss */
+.mp-pusher.mp-pushed::after,
+.mp-level.mp-level-overlay::after {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+/* line 126, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/component.css.scss */
+.mp-level.mp-level-overlay {
+  cursor: pointer;
+}
+
+/* line 130, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/component.css.scss */
+.mp-level.mp-level-overlay.mp-level::before {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  opacity: 1;
+}
+
+/* line 137, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/component.css.scss */
+.mp-pusher,
+.mp-level {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+/* overlap */
+/* line 145, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/component.css.scss */
+.mp-overlap .mp-level.mp-level-open {
+  box-shadow: 1px 0 2px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translate3d(-40px, 0, 0);
+  -moz-transform: translate3d(-40px, 0, 0);
+  transform: translate3d(-40px, 0, 0);
+}
+
+/* First level */
+/* line 153, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/component.css.scss */
+.mp-menu > .mp-level,
+.mp-menu > .mp-level.mp-level-open,
+.mp-menu.mp-overlap > .mp-level,
+.mp-menu.mp-overlap > .mp-level.mp-level-open {
+  box-shadow: none;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* cover */
+/* line 164, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/component.css.scss */
+.mp-cover .mp-level.mp-level-open {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 170, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/component.css.scss */
+.mp-cover .mp-level.mp-level-open > ul > li > .mp-level:not(.mp-level-open) {
+  -webkit-transform: translate3d(-100%, 0, 0);
+  -moz-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+}
+
+/* content style */
+/* line 177, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/component.css.scss */
+.mp-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 183, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/component.css.scss */
+.mp-menu h2 {
+  margin: 0;
+  padding: 1em;
+  color: rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+  font-weight: 300;
+  font-size: 2em;
+}
+
+/* line 192, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/component.css.scss */
+.mp-menu.mp-overlap h2::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 8px;
+  font-size: 75%;
+  line-height: 1.8;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.1s 0.3s;
+  -moz-transition: opacity 0.3s, -moz-transform 0.1s 0.3s;
+  transition: opacity 0.3s, transform 0.1s 0.3s;
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+/* line 208, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/component.css.scss */
+.mp-menu.mp-cover h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 1em;
+}
+
+/* line 215, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/component.css.scss */
+.mp-overlap .mp-level.mp-level-overlay > h2::before {
+  opacity: 1;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/* line 225, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/component.css.scss */
+.mp-menu ul li > a {
+  display: block;
+  padding: 0.7em 1em 0.7em 1.8em;
+  outline: none;
+  box-shadow: inset 0 -1px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.1);
+  font-size: 1.4em;
+  -webkit-transition: background 0.3s, box-shadow 0.3s;
+  -moz-transition: background 0.3s, box-shadow 0.3s;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+/* line 237, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/component.css.scss */
+.mp-menu ul li::before {
+  position: absolute;
+  left: 10px;
+  z-index: -1;
+  color: rgba(0, 0, 0, 0.2);
+  line-height: 3.5;
+}
+
+/* line 245, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/component.css.scss */
+.mp-level > ul > li:first-child > a {
+  box-shadow: inset 0 -1px rgba(0, 0, 0, 0.2), inset 0 1px rgba(0, 0, 0, 0.2);
+}
+
+/* line 249, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/component.css.scss */
+.mp-menu ul li a:hover,
+.mp-level > ul > li:first-child > a:hover {
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -1px transparent;
+}
+
+/* line 255, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/component.css.scss */
+.mp-menu .mp-level.mp-level-overlay > ul > li > a,
+.mp-level.mp-level-overlay > ul > li:first-child > a {
+  box-shadow: inset 0 -1px transparent;
+}
+
+/* line 260, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/component.css.scss */
+.mp-level > ul > li:first-child > a:hover,
+.mp-level.mp-level-overlay > ul > li:first-child > a {
+  box-shadow: inset 0 -1px transparent, inset 0 1px transparent;
+}
+
+/* seems like Chrome 34.0.1847.131 needs the second shadow otherwise the transition breaks */
+/* line 265, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/component.css.scss */
+.mp-back {
+  background: rgba(0, 0, 0, 0.1);
+  outline: none;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  display: block;
+  font-size: 0.8em;
+  padding: 1em;
+  position: relative;
+  box-shadow: inset 0 1px rgba(0, 0, 0, 0.1);
+  -webkit-transition: background 0.3s;
+  -moz-transition: background 0.3s;
+  transition: background 0.3s;
+}
+
+/* line 282, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/component.css.scss */
+.mp-back::after {
+  font-family: 'linecons';
+  position: absolute;
+  content: "\e037";
+  right: 10px;
+  font-size: 1.3em;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* line 291, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/component.css.scss */
+.mp-menu .mp-level.mp-level-overlay > .mp-back,
+.mp-menu .mp-level.mp-level-overlay > .mp-back::after {
+  background: transparent;
+  box-shadow: none;
+  color: transparent;
+}
+
+/* Fallback example for browsers that don't support 3D transforms (and no JS fallback) */
+/* We'll show the first level only */
+/* line 300, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/component.css.scss */
+.no-csstransforms3d .mp-pusher,
+.no-js .mp-pusher {
+  padding-left: 300px;
+}
+
+/* line 305, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/component.css.scss */
+.no-csstransforms3d .mp-menu .mp-level,
+.no-js .mp-menu .mp-level {
+  display: none;
+}
+
+/* line 310, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/component.css.scss */
+.no-csstransforms3d .mp-menu > .mp-level,
+.no-js .mp-menu > .mp-level {
+  display: block;
+}
+/* forms */
+/* line 4, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/custom.css.scss */
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* line 10, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/custom.css.scss */
+input {
+  height: auto !important;
+}
+
+/* line 14, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/custom.css.scss */
+#error_explanation {
+  color: red;
+}
+/* line 16, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/custom.css.scss */
+#error_explanation ul {
+  color: red;
+  margin: 0 0 30px 0;
+}
+
+/* books */
+/* line 23, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/custom.css.scss */
+.books {
+  list-style: none;
+  padding: 0;
+}
+/* line 26, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/custom.css.scss */
+.books li {
+  padding: 10px 0;
+  border-top: 1px solid #e8e8e8;
+}
+/* line 30, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/custom.css.scss */
+.books .user {
+  margin-top: 5em;
+  padding-top: 0;
+}
+/* line 34, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/custom.css.scss */
+.books .content {
+  display: block;
+  margin-left: 60px;
+}
+/* line 37, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/custom.css.scss */
+.books .content img {
+  display: block;
+  padding: 5px 0;
+}
+/* line 42, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/custom.css.scss */
+.books .timestamp {
+  color: gray;
+  display: block;
+  margin-left: 60px;
+}
+/* line 47, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/custom.css.scss */
+.books .gravatar {
+  float: left;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+/* line 55, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/custom.css.scss */
+aside textarea {
+  height: 100px;
+  margin-bottom: 5px;
+}
+
+/* line 61, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/custom.css.scss */
+span.picture {
+  margin-top: 10px;
+}
+/* line 63, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/custom.css.scss */
+span.picture input {
+  border: 0;
+}
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Quicksand:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,100,200);
+@font-face {
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'codropsicons';
+	src:url('../fonts/codropsicons/codropsicons.eot');
+	src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/codropsicons/codropsicons.woff') format('woff'),
+		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
+		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+}
+
+body {
+	background: #34495e;
+	color: #fff;
+	font-weight: 100;
+	font-family: 'Raleway', sans-serif}
+
+a {
+	text-decoration: none;
+	color: #f7f7f7;
+	outline: none;
+}
+
+a:hover, a:focus {
+	color: #fff;
+	outline: none;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before,
+.clearfix:after {
+	display: table;
+	content: " ";
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.codrops-header,
+.codrops-top {
+	font-family: Raleway, sans-serif;
+}
+
+.codrops-header {
+	margin: 0 auto;
+	padding: 2em;
+	background: rgba(0,0,0,0.01);
+	text-align: center;
+}
+
+.codrops-header h1 {
+	margin: 0;
+	font-weight: 100;
+	font-size: 4em;
+	line-height: 1.3;
+	text-align: center;
+/*	float: center;
+*/
+padding-left: 3em;
+
+}
+
+
+
+.codrops-header span {
+	display: block;
+	padding-right: 5em;
+	font-size: 60%;
+	opacity: 0.7;
+	vertical-align: center;
+}
+
+/* To Navigation Style */
+.codrops-top {
+	width: 100%;
+	background: #91cfa1;
+	background: rgba(255, 255, 255, 0.1);
+	text-transform: uppercase;
+	font-size: 0.69em;
+	line-height: 2.2;
+}
+
+.codrops-top a {
+	display: inline-block;
+	padding: 0 1em;
+	color: #fff;
+	text-decoration: none;
+	letter-spacing: 0.1em;
+}
+
+.codrops-top a:hover {
+	background: rgba(255,255,255,0.95);
+	color: #333;
+}
+
+.codrops-top span.right {
+	float: right;
+}
+
+.codrops-top span.right a {
+	display: block;
+	float: left;
+}
+
+.codrops-icon:before {
+	margin: 0 4px;
+	text-transform: none;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-family: 'codropsicons';
+	line-height: 1;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+.codrops-icon-drop:before {
+	content: "\e001";
+}
+
+.codrops-icon-prev:before {
+	content: "\e004";
+}
+
+/* Demo Buttons Style */
+.codrops-demos {
+	padding-top: 1em;
+	font-size: 1.1em;
+}
+
+.codrops-demos a {
+	display: block;
+	float: left;
+	clear: both;
+	margin: 0.5em 0.5em 0.5em 1.9em;
+	padding: 1em 1.1em;
+	width: 280px;
+	outline: none;
+	color: #fff;
+	background: #336ca6;
+	text-align: center;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+.codrops-demos a:hover,
+.codrops-demos a.current-demo,
+.codrops-demos a.current-demo:hover {
+	opacity: 0.6;
+}
+
+table {
+ width: 50%;
+ border-style: solid;
+
+}
+
+
+
+.content {
+	padding: 4em 2em;
+	max-width: 1200px;
+	margin: 0 auto;
+/*	border-style: solid;
+*/}
+
+.block {
+	float: left;
+	padding: 1em 3em;
+/*	border-style: solid;
+*/}
+
+.block-image {
+ width:100%;
+text-align: center;
+/*background: white;*/
+
+}
+
+.block-button {
+	width: 20%;
+	height:20%;
+ float: right;
+font-size: 20%;
+padding-top: 4em;
+
+
+}
+
+.block-40 {
+	width: 36%;
+	height: 420px;
+	display: inline;
+	float:right;
+	margin-left:20px;
+	border-left-style: dotted;
+}
+
+#Description .block-40{
+	width: 30%;
+	display: inline;
+	float:right;
+	margin-left:20px;
+}
+.block-50{
+	width: 50%;
+
+}
+
+.block-60{
+	float:left;
+	width: 62%;
+
+}
+
+.block-100 {
+	width: 100%;
+}
+.block-Text {
+width: 40%;
+}
+
+.block p {
+	margin: 0;
+	padding: 0 0.5em 0em;
+	font-size: 3em;
+	line-height: 1.5;
+	display:line;
+
+}
+
+
+.block p1 {
+	margin: 0;
+	padding: 0.25em 2em;
+	line-height: 1.5;
+	font-size: 2em;
+}
+
+.block p2 {
+	margin: 0;
+	padding: 0 0em 0em;
+	font-size: 1.75em;
+	line-height: 1.5; 
+
+}
+
+.block-Select {
+	font-size: 2em;
+	padding: 0.25em 4em;
+	line-height: 1.5;
+	display: inline;
+}
+
+
+
+.info {
+	text-align: center;
+	font-size: 1.5em;
+	margin-top: 3em;
+	clear: both;
+	padding-top: 3em;
+	color: rgba(255,255,255,0.5);
+}
+
+.info a {
+	font-weight: 700;
+	font-size: 0.9em;
+}
+
+.info a:hover {
+	color: #336ca6;
+}
+
+@media screen and (max-width: 69em) {
+	.block {
+		float: none;
+		width: 100% !important;
+		padding: 1em;
+	}
+}
+
+@media screen and (max-width: 25em) {
+
+	body {
+		font-size: 80%;
+	}
+
+	.codrops-icon span {
+		display: none;
+	}
+
+}
+@font-face {
+  font-family: 'linecons';
+  src: url(/assets/linecons/linecons-fa6342bf927ab3226ece8dd392ea4e38.eot);
+  src: url(/assets/linecons/linecons-fa6342bf927ab3226ece8dd392ea4e38.eot?#iefix) format("embedded-opentype"), url(/assets/linecons/linecons-9f4b814cff55f731cc774ea9e00c9818.woff) format("woff"), url(/assets/linecons/linecons-4904c65b3b7660494d0052558064225d.ttf) format("truetype"), url(/assets/linecons/linecons-db9544a90b1cfcb12094d394c912bb47.svg#linecons) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 12, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon:before {
+  font-family: 'linecons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  display: inline-block;
+  margin-right: 0.6em;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 24, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-female:before {
+  content: "\f182";
+}
+
+/* line 27, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-male:before {
+  content: "\f183";
+}
+
+/* line 30, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-arrow-left:before {
+  content: "\e032";
+}
+
+/* line 33, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-arrow-left-2:before {
+  content: "\e034";
+}
+
+/* line 36, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-arrow-left-3:before {
+  content: "\e036";
+}
+
+/* line 39, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-arrow-left-4:before {
+  content: "\e038";
+}
+
+/* line 42, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-arrow-right:before {
+  content: "\e035";
+}
+
+/* line 45, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-arrow-right-2:before {
+  content: "\e037";
+}
+
+/* line 48, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-arrow-right-3:before {
+  content: "\e039";
+}
+
+/* line 51, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-arrow-right-4:before {
+  content: "\e033";
+}
+
+/* line 55, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-phone:before {
+  content: "\e000";
+}
+
+/* line 58, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-news:before {
+  content: "\e001";
+}
+
+/* line 61, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-photo:before {
+  content: "\e002";
+}
+
+/* line 64, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-shop:before {
+  content: "\e003";
+}
+
+/* line 67, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-wallet:before {
+  content: "\e004";
+}
+
+/* line 70, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-t-shirt:before {
+  content: "\e005";
+}
+
+/* line 73, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-heart:before {
+  content: "\e006";
+}
+
+/* line 76, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-cloud:before {
+  content: "\e007";
+}
+
+/* line 79, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-display:before {
+  content: "\e008";
+}
+
+/* line 82, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-diamond:before {
+  content: "\e009";
+}
+
+/* line 85, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-banknote:before {
+  content: "\e00a";
+}
+
+/* line 88, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-data:before {
+  content: "\e00b";
+}
+
+/* line 91, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-music:before {
+  content: "\e00c";
+}
+
+/* line 94, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-location:before {
+  content: "\e00d";
+}
+
+/* line 97, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-star:before {
+  content: "\e00e";
+}
+
+/* line 100, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-tv:before {
+  content: "\e00f";
+}
+
+/* line 103, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-eye:before {
+  content: "\e010";
+}
+
+/* line 106, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-megaphone:before {
+  content: "\e011";
+}
+
+/* line 109, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-study:before {
+  content: "\e012";
+}
+
+/* line 112, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-bubble:before {
+  content: "\e013";
+}
+
+/* line 115, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-sound:before {
+  content: "\e014";
+}
+
+/* line 118, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-video:before {
+  content: "\e015";
+}
+
+/* line 121, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-stack:before {
+  content: "\e016";
+}
+
+/* line 124, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-lab:before {
+  content: "\e017";
+}
+
+/* line 127, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-food:before {
+  content: "\e018";
+}
+
+/* line 130, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-cup:before {
+  content: "\e019";
+}
+
+/* line 133, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-trash:before {
+  content: "\e01a";
+}
+
+/* line 136, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-user:before {
+  content: "\e01b";
+}
+
+/* line 139, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-key:before {
+  content: "\e01c";
+}
+
+/* line 142, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-fire:before {
+  content: "\e01d";
+}
+
+/* line 145, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-clip:before {
+  content: "\e01e";
+}
+
+/* line 148, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-mail:before {
+  content: "\e01f";
+}
+
+/* line 151, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-search:before {
+  content: "\e020";
+}
+
+/* line 154, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-settings:before {
+  content: "\e021";
+}
+
+/* line 157, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-like:before {
+  content: "\e022";
+}
+
+/* line 160, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-calendar:before {
+  content: "\e023";
+}
+
+/* line 163, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-camera:before {
+  content: "\e024";
+}
+
+/* line 166, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-tag:before {
+  content: "\e025";
+}
+
+/* line 169, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-note:before {
+  content: "\e026";
+}
+
+/* line 172, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-clock:before {
+  content: "\e027";
+}
+
+/* line 175, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-lock:before {
+  content: "\e028";
+}
+
+/* line 178, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-vynil:before {
+  content: "\e029";
+}
+
+/* line 181, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-truck:before {
+  content: "\e02a";
+}
+
+/* line 184, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-paperplane:before {
+  content: "\e02b";
+}
+
+/* line 187, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-bulb:before {
+  content: "\e02c";
+}
+
+/* line 190, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-pen:before {
+  content: "\e02d";
+}
+
+/* line 193, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-params:before {
+  content: "\e02e";
+}
+
+/* line 196, /Users/xiangpan/Documents/px/Programming/GitHub/TricoBookExchange/app/assets/stylesheets/icons.css.scss */
+.icon-world:before {
+  content: "\e02f";
+}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}body{margin:0;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;margin:0.67em 0;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:bold;}dfn{font-style:italic;}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em;}pre{white-space:pre-wrap;}q{quotes:"\201C" "\201D" "\2018" "\2019";}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-0.5em;}sub{bottom:-0.25em;}img{border:0;}svg:not(:root){overflow:hidden;}figure{margin:0;}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em;}legend{border:0;padding:0;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,select{text-transform:none;}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;}button[disabled],html input[disabled]{cursor:default;}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,100,200);
+
+.message{
+	border-style: solid;
+	border-radius: 20px;
+	/*font-weight: bold;*/
+	padding: 10px 30px 10px 30px;
+	/*min-width: 100px;*/
+	max-width: 500px;
+	margin-left:10%;
+	font-size: 1.3em;
+	font-style: font-family: 'Raleway', sans-serif
+}
+
+.user{
+	color: #B5B2B8;
+}
+
+.button{
+	display:inline;  
+	border: 2px solid #FFFFFF;
+  padding: 5px 5px;
+  width: 150px;
+  border-radius: 25px;
+  text-align: center;
+  float: right;
+  background-color: transparent;
+  font-size: 1em;
+  color: #FFFFFF;
+}
+
+.smallicon{
+	width:30px;
+	float:right;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
