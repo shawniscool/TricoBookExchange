@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :messages
+
   root 'static_pages#home'
   get 'password_resets/new'
 
