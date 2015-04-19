@@ -5,7 +5,7 @@ class StaticPagesController < ApplicationController
   	@hashes = Hash.new{|key,value| key[value] = Hash.new{|key2,value2| key2[value2] = SortedSet.new}}
   	# where("college = 'Swarthmore College'")
   	books.each do |book|
-  		@hashes[book.college][book.department] << book.courseNumber.to_i
+  		@hashes[book.college][book.department] << book.coursenumber.to_i
   	end
   end
 end
