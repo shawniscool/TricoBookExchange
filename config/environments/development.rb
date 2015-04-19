@@ -25,7 +25,7 @@ Rails.application.configure do
   # added these for mailer
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :test
-  host = 'localhost:3000'
+  host = 'herokuapp.com'
   config.action_mailer.default_url_options = { host: host }
 
   # Debug mode disables concatenation and preprocessing of assets.
