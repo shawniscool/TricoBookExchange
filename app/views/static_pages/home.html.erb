@@ -10,7 +10,7 @@
 			<% li += department + "</a><div class='mp-level'><h2>" + department +"</h2>" %>
 			<% li += "<a class='mp-back' href='#'>back</a><ul>" %>
 			<% @hashes[college][department].each do |num| %>
-				<% li += "<li><a href='#'>" + num + "</a></li>" %>
+				<% li += "<li><a href='#'>" + num.to_s + "</a></li>" %>
 			<% end %>
 			<% li += "</ul></div></li>" %>
 		<% end %>
