@@ -1,7 +1,7 @@
 $(function(){
 	$('#triggerReturn').hide();
 	var $a=$("a[href='#']").not('.icon').not('.mp-back').not('.mp-forward').not('.menu-trigger');
-	// createMenu();
+	createMenu();
 
 
 // change the web layout when return button is clicked
@@ -45,14 +45,16 @@ function createMenu(){
 }
 
 function addIcons(){
-	var $icons = $(".smallicon");
+	var $messageicons = $(".messageicon");
+	var $emailicons = $(".emailicon");
 	// alert($icons.length);
 	// alert($icons.first);
-	$icons.addClass("newClass");
-
-	$icons.on('click',function(e){
+	// alert("message icons number is " + $messageicons.length);
+	// alert("email icons number is " + $emailicons.length);
+	// This a for twilio and will be sending an ajax call to a function in messages controller
+	$messageicons.on('click',function(e){
 		e.preventDefault();
-		console.log("clicked icon");
+		console.log("clicked message icon");
 		textbookName = $(this).parent().siblings(".name").text();
 		// alert(textbookName);
 		$.ajax({type:'GET',
@@ -61,6 +63,20 @@ function addIcons(){
 						success:function(){
 							// console.log("sent twilio text!");
 							alert("Your interest text to the seller is sent!");
+					}
+				});
+	});
+	// This is for sendGrid sending ajax call to a function in books controller
+	$emailicons.on('click',function(e){
+		e.preventDefault();
+		console.log("clicked email icon");
+		textbookName = $(this).parent().siblings(".name").text();
+		// alert(textbookName);
+		$.ajax({type:'GET',
+						url:'/sendEmail',
+						data:{name:textbookName},
+						success:function(){
+							alert("Your interest email to the seller is sent!");
 					}
 				});
 	});

@@ -14,6 +14,8 @@ Rails.application.routes.draw do
   get 'sell' => 'books#new'
   get '/find' => 'books#find'
   get '/sendMessage' => 'messages#sendMessage'
+  get '/sendEmail' => 'books#send_email'
+
   resources :users
   resources :account_activations, only: [:edit]
   resources :password_resets,     only: [:new, :create, :edit, :update]

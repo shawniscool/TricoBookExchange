@@ -32,6 +32,15 @@ class BooksController < ApplicationController
 		end
 	end
 
+	def send_email
+		UserMailer.send_email(Book.first).deliver_now
+		flash[:info] = "Your email is sent!"
+		puts "Email sent!"
+		respond_to do |format|
+    		format.js { render nothing: true } 
+    	end
+	end
+
 	private
 		def book_params
 			params.require(:book).permit(:name,:college,:department,:coursenumber)
