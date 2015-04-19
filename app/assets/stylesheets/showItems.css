@@ -28,3 +28,8 @@
   font-size: 1em;
   color: #FFFFFF;
 }
+
+.smallicon{
+	width:25px;
+	float:right;
+}

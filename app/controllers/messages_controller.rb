@@ -17,6 +17,30 @@ class MessagesController < ApplicationController
     @message = Message.new
   end
 
+  def sendMessage
+    puts "This is in the sendMessage Controller function"
+    account_sid = 'AC8c5be76854a889a1b26d9f48131671c8' 
+    auth_token = '858986e9e7fe0396edac815d1d1fd911' 
+    client = Twilio::REST::Client.new account_sid, auth_token
+    from = "+19093783080" # Your Twilio number
+    friends = {
+    "+19098393097" => "Shawn",
+    }
+    # puts "value of num is " + params[:num]
+    output = "Hey, this is Shawn and I am interested in your textbook #{params[:name]}."
+    output += " My phone number is 909-839-3097 and please let me know if you are interested in talking more."
+    friends.each do |key, value|
+      client.account.messages.create(
+        :from => from,
+        :to => key,
+        :body => "Hey #{value}, " + output
+      )
+      puts "Sent message to #{value}"
+    end
+    render :json => {}
+  end
+
+
   # GET /messages/1/edit
   def edit
   end

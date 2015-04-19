@@ -9,7 +9,6 @@ $('#triggerReturn').on('click',function(e){
 	e.preventDefault();
 	$("#loadItems").empty();
 	$('.content').show();
-	// $("#form").show();
 	$('#triggerReturn').hide();
 	// alert("aa");
 });
@@ -32,6 +31,8 @@ $('#triggerReturn').on('click',function(e){
 							$('#loadItems').empty();
 							$('#loadItems').append(books);
 							$('#triggerReturn').show();
+							setTimeout(addIcons,500);
+							
 						}
 				});
 	});
@@ -41,4 +42,25 @@ $('#triggerReturn').on('click',function(e){
 function createMenu(){
 	console.log("create menu function");
 	new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ) );
+}
+
+function addIcons(){
+	var $icons = $(".smallicon");
+	// alert($icons.length);
+	// alert($icons.first);
+	$icons.addClass("newClass");
+
+	$icons.on('click',function(e){
+		e.preventDefault();
+		console.log("clicked icon");
+		textbookName = $(this).parent().siblings(".name").text();
+		// alert(textbookName);
+		$.ajax({type:'GET',
+						url:'/sendMessage',
+						data:{name:textbookName},
+						success:function(){
+							console.log("sent twilio text!");
+					}
+				});
+	});
 }
