@@ -10,7 +10,6 @@ $('#triggerReturn').on('click',function(e){
 	$("#loadItems").empty();
 	$('.content').show();
 	$('#triggerReturn').hide();
-	// alert("aa");
 });
 	
 	// triggers the ajax call when course number is clicked 
@@ -25,7 +24,6 @@ $('#triggerReturn').on('click',function(e){
 						success:function(books){
 							// books are returned from book controller render
 							console.log("sent ajax call");
-							// console.log(books);
 							$('form').hide(0);
 							$('.content').hide(0);
 							$('#loadItems').empty();
